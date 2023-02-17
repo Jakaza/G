@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;400;500;600;900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
 *,
 body{
     padding: 0;
@@ -13,7 +15,10 @@ body{
 
     /*---------------Transitions */
     --transition: all 0.3s linear; /* all linear transition */
-
+    
+    /*----------------Green Background */
+    --c-white-1: #fff;
+    --c-white-2: #ccd6f6;
 
     /*----------------Green Background */
     --bg-white-1: #fff;
@@ -43,15 +48,46 @@ body{
 /*================================================================*/
 
 /*=========================== GLOBAL STYLE =====================*/
+
+a,p,h1,h2,h3,h4,h5,h6{
+    color: var(--c-white-1);
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
 header, main {
     background: linear-gradient(
         to right,
         var(--bg-black-2) 0%,
-        var(--bg-black-2) 50%,
+        var(--bg-black-2) 60%,
         var(--bg-blue-2) 50%,
         var(--bg-blue-2) 100%
+
       );
 }
+.inner{
+    width: 80%;
+    height: auto;
+    height: inherit;
+    margin: 0 auto;
+}
+/*For Small Devices*/ 
+/* header{
+    background: var(--bg-black-2);
+}
+main {
+    background: linear-gradient(
+        to bottom,
+        var(--bg-black-2) 0%,
+        var(--bg-black-2) 60%,
+        var(--bg-blue-2) 50%,
+        var(--bg-blue-2) 100%
+    );
+} */
+
+
 /*================================================================*/
 
 
@@ -66,6 +102,98 @@ header{
 
 
 /*=========================== MAIN CONTAINER ========================*/
+main{
+    width: 100%;
+    height: 65vh;
+}
+
+main .inner {
+    display: flex;
+}
+main .inner section{
+    height: inherit;
+}
+
+.user-details{
+    width: 50%;
+    padding: 5% 0 0 0;
+    /* background-color: #5e83e8; */
+}
+
+.underline{
+    width: 5rem;
+    height: .50rem;
+    margin-bottom: 1.25rem;
+    background: var(--bg-blue-2);
+}
+
+.details h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    color: var(--c-white-2);
+}
+
+.details h4{
+    font-family: 'Lato', sans-serif;
+}
+.details p{
+    font-family: 'Lato', sans-serif;
+    color: var(--c-white-1);
+    letter-spacing: 0.5px;
+}
+.details .btn {
+    text-transform: uppercase;
+    background: var(--bg-blue-2);
+    padding: 6px 50px;
+    letter-spacing: var(--spacing);
+    display: inline-block;
+    font-weight: 700;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    font-size: 0.875rem;
+    border: 2px solid transparent;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    color: var(--c-white-1);
+    border-radius: 0.5rem;
+  }
+.social-media ul li a .fa-brands{
+    font-size: 25px;
+    padding: 5px 10px 0 0;
+    color: var(--bg-blue-2);
+    transition: all 0.3s linear;
+}
+
+.user-profile{
+    width: 50%;
+    padding: 5%;
+    /* background-color: #7cb342; */
+}
+
+
+.user-profile-pic{
+    width: 300px;
+    height: 400px;
+    padding: 50px 0 0 0;
+    border-radius: 8px;
+    background-color: #ccd6f6;
+}
+.handsome{
+    width: inherit;
+    display: block;
+    height: inherit;
+    margin-top: -2.435em;
+    background-color: #fff;
+    border-radius: 8px;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    margin-left: -2.2em;
+    background-image: url(/images/profile.jpg);
+}
+
 
 /*================================================================*/
 
