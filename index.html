@@ -15,7 +15,7 @@
 <body>
     <header>
     </header>
-    <main> 
+    <!-- <main> 
         <div class="inner">
             <section class="user-details">
                 <div class="details">
@@ -47,10 +47,10 @@
                 </div>
             </section>
         </div>
-    </main>
+    </main> -->
 
 
-    <section class="about_me">
+    <!-- <section class="about_me">
         <div class="inner">
             <div class="title">
                 <h1 class="heading-sec__main">About Me</h1>
@@ -107,7 +107,7 @@
             </div>
             <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact Me</a>
         </div>
-    </section>
+    </section> -->
 
 
     <section class="service__container">
@@ -132,13 +132,15 @@
             <div class="project__content">
 
                 <div class="project__con">
+                    
                     <div class="project-image">
-
+                        <div class="image_opacity"></div>
+                        <img src="/images/testing_projects/template.png" width="100%" height="100%" alt="" srcset="">
                     </div>
                     <div class="project-details">
-                        <div>
-                            <p class="project-overline text_to_right">Featured Project</p>
-                            <h3 class="project-title text_to_right">Project Title</h3>
+                        <div class="project_heading">
+                            <p class="project-overline ">Featured Project</p>
+                            <h3 class="project-title ">Project Title</h3>
                         </div>
 
                         <div class="project-description">
@@ -146,26 +148,86 @@
                         </div>
 
                         <ul class="project-tech-list">
-                            <li>VS Code</li>
+                            <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/561f3d4fd727fcca82984c91a65eca069ff34a435072158f6947c4ca52370eae/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4769742d4630353033323f7374796c653d666c61742d737175617265266c6f676f3d676974266c6f676f436f6c6f723d7768697465"><img alt="git" src="https://camo.githubusercontent.com/561f3d4fd727fcca82984c91a65eca069ff34a435072158f6947c4ca52370eae/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4769742d4630353033323f7374796c653d666c61742d737175617265266c6f676f3d676974266c6f676f436f6c6f723d7768697465" data-canonical-src="https://img.shields.io/badge/-Git-F05032?style=flat-square&amp;logo=git&amp;logoColor=white" style="max-width: 100%;"></a></li>
                             <li>VS Code</li>
                             <li>VS Code</li>
                             <li>VS Code</li>
                         </ul>
 
                         <div class="project-links">
-                            <li><a href=""><i class="fa-brands project__icon fa-square-github"></i></a>
-                                <span class="tooltiptext">Tooltip text</span>
+                            <li><a href=""><i class="fa-brands project__icon fa-square-github">
+                                
+                            </i></a>
+                    
                             </li>
                             <li><a href=""><i class="fa-solid project__icon s__icon  fa-arrow-up-right-from-square"></i></a></li>
                         </div>
-
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
+    <div class="contact_me-conatiner">
+        <div class="inner">
+            <div class="title">
+                <h1 class="heading-sec__main">Get In Touch</h1>
+            </div>
+
+            <div class="sub-heading">
+                <h4 class="f-souce">I’m excited to learn about your project. Ready to get started</h4>
+            </div>
+
+            <div class="contact__me_form">
+                
+
+                <form action="" class="contact__me">
+                    <div class="row">
+                        <div class="col">
+                            <label for="exampleFormControlTextarea1" class="form-label">Name</label>
+                          <input type="text" class="form-control" placeholder="Enter Your Name" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <label for="exampleFormControlTextarea1" class="form-label">Email</label>
+                          <input type="text" class="form-control" placeholder="Enter Your Email" aria-label="Last name">
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col">
+                            <label for="exampleFormControlTextarea1" class="form-label">Type of project
+                            </label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="1">Website</option>
+                                <option value="2">Mobile App</option>
+                                <option value="3">Mentorship</option>
+                              </select>
+                        </div>
+                        <div class="col">
+                            <label for="exampleFormControlTextarea1" class="form-label">Budget</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="1">R300 - R1500</option>
+                                <option value="2">R2000 - R5000</option>
+                                <option value="3">R5000++</option>
+                              </select>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter Your Message" rows="5"></textarea>
+                      </div>
+
+                      <div class="col-12">
+                        <button class="btn btn-success" type="submit">Submit form</button>
+                      </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
 
 
 </body>
