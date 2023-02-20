@@ -556,10 +556,11 @@ main .inner section{
 
 .contact_me-conatiner{
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .contact__me_form{
-    padding: 50px 0;
+    padding: 50px 0 30px 0;
     background-color: var(--c-white-1);
 }
 
@@ -587,8 +588,56 @@ main .inner section{
 
 
 
-
-
 /*=========================== FOOTER ========================*/
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--bg-black-2);
+}
+
+.main-footer__upper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.main-footer__upper > section{
+    width: 50%;
+}
+
+.profile_icon,
+.profile_icon2{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    background: url(/images/logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.profile_icon2{
+    background: var(--bg-black-2);
+}
+
+.bio{
+    padding: 8px 0;
+    color: var(--c-white-2);
+}
+
+.main-footer__lower {
+    padding: 1rem 0;
+    border-top: 1px solid #444;
+    color: #eee;
+    font-size: 1.2rem;
+    text-align: left;
+    text-align: center;
+}
+
+.footer-social-media{
+    display: flex;
+}
 
 /*============================================================*/
