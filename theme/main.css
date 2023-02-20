@@ -646,3 +646,52 @@ footer{
 }
 
 /*============================================================*/
+
+
+/*=========================== LANGUAGES AND TOOLS ==========================*/
+
+.project-tech-list li{
+    color: var(--c-white-1) !important;
+}
+
+.nodejs{
+    background-color: green !important;
+}
+.html{
+    background-color: #e34c26 !important;
+}
+.css{
+    background-color: #264de4 !important;
+}
+.android{
+    background-color: #a4c639 !important;
+}
+.git{
+    background-color: #f34f29 !important;
+}
+.github{
+    background-color: #171515 !important;
+}
+.reactjs{
+    background-color: #61DBFB !important;
+}
+.expressjs{
+    background-color: #68a063 !important;
+}
+.vscode{
+    background-color: #0078d7 !important;
+}
+.php{
+    background-color: #8993be !important;
+}
+.java{
+    background-color: #f89820 !important;
+}
+.apache{
+    background-color: #dbb469 !important;
+}
+.mongodb{
+    background-color: #4DB33D !important;
+}
+
+/*============================================================*/
