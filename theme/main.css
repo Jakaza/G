@@ -213,10 +213,12 @@ main .inner section{
 
 .about_me{
     width: 100%;
-    height: 500px;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 50px;
 }
 
-.about_me .title{
+.title{
     text-align: center;
     padding-top: 50px;
     text-transform: uppercase;
@@ -340,7 +342,16 @@ main .inner section{
 /*============================================================*/
 
 /*=========================== SERVICES ========================*/
+.service__container{
+    width: 100%;
+    height: 500px;
+}
 
+.service__content{
+    width: 100%;
+    height: 500px;
+    background-color: var(--c-white-1);
+}
 /*============================================================*/
 
 /*=========================== FOOTER ========================*/
