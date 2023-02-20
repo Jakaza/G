@@ -10,6 +10,20 @@ body{
 /*========================COLOR VARIABLES =======================*/
 :root{
 
+     /*---------------Font Size */
+     --fz-xs: 13px;
+     --fz-sm: 14px;
+     --fz-md: 16px;
+     --fz-lg: 18px;
+     --fz-xl: 20px;
+     --fz-xxl: 22px;
+    --fz-heading: 32px;
+    --lightest-slate: #ccd6f6;
+    --navy-shadow: rgba(2,12,27,0.7);
+    --light-navy: #112240;
+    --light-slate: #a8b2d1;
+    --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+
     /*---------------Transitions */
     --box-shadow-1: rgb(0 0 0 / 5%) 0px 5px 10px; /* Light box shadow */
 
@@ -29,6 +43,7 @@ body{
     --bg-green-2: #8bc53d;
     --bg-green-4: #b6d293;
     --bg-green-5: #ccf381;
+    --bg-green-6:#64ffda;
 
     /*----------------Black Background */
     --bg-blue-1:#4831d4;
@@ -44,6 +59,9 @@ body{
     --bg-black-4: rgb(78, 78, 78);
     --bg-black-5: rgb(86, 86, 86);
     --bg-black-6: rgb(119, 119, 119);
+
+
+    --lightest-navy : #233554;
 
     /*----------------Global Background */
     --bg-global-1:#f9f9f9;
@@ -82,6 +100,12 @@ header, main {
 
 .f-souce{
     font-family:'Source Sans Pro', sans-serif;
+}
+
+.text_to_right{
+    display: flex;
+    justify-content: right;
+    padding: 0 15px;
 }
 /*For Small Devices*/ 
 /* header{
@@ -344,15 +368,146 @@ main .inner section{
 /*=========================== SERVICES ========================*/
 .service__container{
     width: 100%;
-    height: 500px;
+    height: auto;
 }
 
 .service__content{
     width: 100%;
-    height: 500px;
     background-color: var(--c-white-1);
 }
 /*============================================================*/
+
+
+/*=========================== MAIN PROJECTS ========================*/
+.project__container{
+    width: 100%;
+    height: 500px;
+    padding-top: 50px;
+}
+
+.project__content{
+    width: 100%;
+}
+
+.sub_heading-sec {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: clamp(26px,5vw,var(--fz-heading));
+    white-space: nowrap;
+}
+
+.sub_heading-sec::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -5px;
+    width: 300px;
+    height: 2px;
+    margin-left: 20px;
+    background-color: var(--lightest-navy);
+}
+
+.project__con{
+    display: flex;
+    width: 100%;
+    height: 700px;
+    /* background-color: #5e83e8; */
+}
+
+.project-image{
+    position: relative;
+    width: 45%;
+    height: 350px;
+    /* background-color: #233554; */
+}
+.project-details{
+    position: relative;
+    width: 55%;
+    height: 350px;
+    background-color: #ffffff;
+    /* background-color: #4831d4; */
+}
+
+.project-title{
+    /* float: right; */
+    color: var(--bg-black-6);
+    font-size: clamp(24px, 5vw, 28px);
+}
+
+
+
+.project-overline{
+    color: var(--bg-blue-3);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.project-description{
+    position: absolute;
+    left: -20%;
+    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    transition: var(--transition);
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+    border-radius: 4px;
+    /* background-color: var(--light-navy); */
+    background-color: #5e83e83f;
+    color: black;
+    font-size: var(--fz-lg);
+    min-height: 150px;
+}
+
+.project-tech-list , 
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    margin: 25px 0px 10px;
+    padding: 0px;
+    list-style: none;
+}
+
+.project-tech-list li {
+    font-size: var(--fz-xs);
+    white-space: nowrap;
+    margin: 0 5px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-family: 'Poppins' , sans-serif;
+    background-color: #6ba5f01a;
+}
+
+/* .project-links {
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    margin-left: 0px;
+    margin-right: -10px;
+    background-color: red;
+}
+
+.project-links {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+    margin-left: -10px;
+    color: var(--lightest-slate);
+} */
+/*============================================================*/
+
+
+
+
+
+
+
 
 /*=========================== FOOTER ========================*/
 
