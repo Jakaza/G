@@ -144,7 +144,7 @@ header{
 main{
     width: 100%;
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 main .inner {
@@ -325,11 +325,11 @@ main .details p{
     border-radius: 8px;
     padding: 5px 15px;
     background-color: #7e9ef5; */
-    min-width: 200px;
-    padding: 5px 15px;
+    min-width: 150px;
+    padding: 5px 10px;
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     background: var(--bg-blue-2);
     border-radius: 5px;
     font-weight: 200;
