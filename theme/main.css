@@ -394,6 +394,7 @@ main .details p{
 .service__content{
     width: 100%;
     height: auto;
+    min-height: 316px;
 }
 
 .service_main_container{
