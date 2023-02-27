@@ -393,15 +393,16 @@ main .details p{
 
 .service__content{
     width: 100%;
-    height: 500px;
+    height: auto;
 }
 
 .service_main_container{
     display: flex;
     width: 50%;
-    height: 400px;
+    height: auto;
     margin: 0 auto;
-    /* background-color: red; */
+    margin-top: 80px;
+    padding-bottom: 25px;
 }
 
 .service_sidebar{
@@ -425,6 +426,7 @@ main .details p{
 
 .active{
     background-color: var(--bg-white-2);
+    color: #f89820;
 }
 
 .service_sidebar ul .active::before{
@@ -444,9 +446,25 @@ main .details p{
 .service_details{
     width: 80%;
     height: inherit;
-    background-color: blue;
+    padding: 0 15px;
+    /* background-color: blue; */
+}
+.service_details  .av{
+    color: var(--bg-green-1);
 }
 
+.service_details  .na{
+    color: red;
+}
+
+.fa-hand-point-right{
+    font-size: 10px;
+    color: #f89820;;
+}
+
+.service_details  p{
+    padding: 5px 0;
+}
 
 
 /*============================================================*/
