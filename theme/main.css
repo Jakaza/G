@@ -466,7 +466,9 @@ main .details p{
     padding: 5px 0;
 }
 
-
+.service_details .hide{
+    display: none;
+}
 /*============================================================*/
 
 
