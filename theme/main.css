@@ -85,6 +85,10 @@ a,p,h1,h2,h3,h4,h5,h6{
 li{
     list-style: none;
 }
+ul{
+    margin: 0 ;
+    padding: 0;
+}
 
 header, main {
     background: linear-gradient(
@@ -389,8 +393,62 @@ main .details p{
 
 .service__content{
     width: 100%;
-    background-color: var(--c-white-1);
+    height: 500px;
 }
+
+.service_main_container{
+    display: flex;
+    width: 50%;
+    height: 400px;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+.service_sidebar{
+    width: auto;
+    height: auto;
+    /* background-color: #0078d7; */
+}
+.service_sidebar ul{
+    border-left: 5px solid var(--bg-blue-3);
+}
+.service_sidebar ul li{
+    position: relative;
+    cursor: pointer;
+    margin: 5px 0;
+    width: 100%;
+    /* overflow: hidden; */
+    padding: 5px 8px;
+    /* background-color: yellow; */
+}
+
+
+.active{
+    background-color: var(--bg-white-2);
+}
+
+.service_sidebar ul .active::before{
+    position: absolute;
+    left: -5px;
+    content: '';
+    width: 5px;
+    top: 0;
+    height: 100%;
+    background-color: #f89820;
+}
+
+.service_sidebar ul li:hover{
+    background-color: white;
+}
+
+.service_details{
+    width: 80%;
+    height: inherit;
+    background-color: blue;
+}
+
+
+
 /*============================================================*/
 
 
