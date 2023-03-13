@@ -20,11 +20,10 @@
 
     <script>
         (_ => {
+            const documentBody = document.getElementById('index_body')
             const screenSize = window.innerWidth
             if (screenSize < 839) {
-                documentBody.classList.add('_body')
-            } else {
-                documentBody.classList.remove('_body')
+                location.href = "_index.html"
             }
         })()
     </script>
