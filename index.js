@@ -63,7 +63,7 @@ async function sendMessage(userName, userEmail, userSubject, userMessage) {
 
     let info = await transporter.sendMail({
         from: `${userName} <${userEmail}>`, // sender address
-        to: "goodnessjakazac@gmail.ocm",
+        to: "goodnessjakazac@gmail.com",
         subject: `${userSubject}`, // Subject line
         text: `${userMessage}`, // plain text body
         html: `<b>${userMessage}</b>`, // html body
