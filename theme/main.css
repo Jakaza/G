@@ -82,24 +82,19 @@ body{
 ._body{
     position: relative;
     overflow: hidden;
+    width: 100%;
     height: 100vmax;
 }
 .blank_screen{
     display: none;
     position:absolute;
-    width: 100%;
-    height: 100%;
-        background: linear-gradient(
-        to right,
-        var(--bg-black-2) 0%,
-        var(--bg-black-2) 60%,
-        var(--bg-blue-2) 50%,
-        var(--bg-blue-2) 100%
-      );
+    width: inherit;
+    height: inherit;
+    background: black;
 }
 .text_view{
     width: 100%;
-    height: inherit;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
