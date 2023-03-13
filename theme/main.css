@@ -78,6 +78,40 @@ p {
 body{
   background-color: var(--bg-global-1);  
 }
+
+._body{
+    position: relative;
+    height: 100vmax;
+    overflow: hidden;
+}
+
+.blank_screen{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+        background: linear-gradient(
+        to right,
+        var(--bg-black-2) 0%,
+        var(--bg-black-2) 60%,
+        var(--bg-blue-2) 50%,
+        var(--bg-blue-2) 100%
+      );
+      overflow: hidden;
+}
+
+._body .blank_screen{
+    display: block;
+            background: linear-gradient(
+        to right,
+        var(--bg-black-2) 0%,
+        var(--bg-black-2) 60%,
+        var(--bg-blue-2) 50%,
+        var(--bg-blue-2) 100%
+      );
+}
+
+
 a,p,h1,h2,h3,h4,h5,h6{
     /* color: var(--c-white-1); */
     text-decoration: none;
