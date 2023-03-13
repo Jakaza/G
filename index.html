@@ -18,26 +18,22 @@
 
     <link rel="stylesheet" href="/theme/main.css">
 
+    <script>
+        (_ => {
+            const screenSize = window.innerWidth
+            if (screenSize < 839) {
+                documentBody.classList.add('_body')
+            } else {
+                documentBody.classList.remove('_body')
+            }
+        })()
+    </script>
+
 </head>
 
 <body id="index_body" class="">
 
-    <div class="blank_screen">
-        <div class="text_view">
-            <h4>This site is not viewable on mobile device yet.</h4>
-            <p>Please use your desktop broswer</p>
-        </div>
-    </div>
 
-    <script>
-        (_ => {
-            const documentBody = document.getElementById('index_body')
-            const screenSize = window.innerWidth
-            if (screenSize < 839) {
-                documentBody.classList.add('_body')
-            }
-        })()
-    </script>
 
     <header>
     </header>
