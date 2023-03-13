@@ -78,6 +78,49 @@ p {
 body{
   background-color: var(--bg-global-1);  
 }
+
+._body{
+    position: relative;
+    overflow: hidden;
+    height: 100vmax;
+}
+.blank_screen{
+    display: none;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+        background: linear-gradient(
+        to right,
+        var(--bg-black-2) 0%,
+        var(--bg-black-2) 60%,
+        var(--bg-blue-2) 50%,
+        var(--bg-blue-2) 100%
+      );
+}
+.text_view{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text_view h4,p{
+    color: var(--c-white-1);
+}
+
+.text_view h4{
+    text-transform: capitalize;
+}
+.text_view p{
+    text-transform: uppercase;
+}
+
+._body .blank_screen {
+    display: block;
+}
+
 a,p,h1,h2,h3,h4,h5,h6{
     /* color: var(--c-white-1); */
     text-decoration: none;
