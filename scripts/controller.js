@@ -1,10 +1,4 @@
-(_ => {
-    const documentBody = document.getElementById('index_body')
-    const screenSize = window.innerWidth
-    if (screenSize < 839) {
-        location.href = "_index.html"
-    }
-})()
+
 
 const lisElements = document.querySelectorAll('.service_side-btn')
 const inforElements = document.querySelectorAll('.infor')

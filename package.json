@@ -1,0 +1,29 @@
+{
+  "name": "g-portfolio",
+  "version": "1.0.0",
+  "description": "Personal Porfolio",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jakaza/G-PORTFOLIO.git"
+  },
+  "author": "Jakaza G Chauke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jakaza/G-PORTFOLIO/issues"
+  },
+  "homepage": "https://github.com/Jakaza/G-PORTFOLIO#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}
