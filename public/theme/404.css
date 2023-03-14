@@ -1,0 +1,83 @@
+:root{
+            --bg-blue-1:#4831d4;
+    --bg-blue-2:#5e83e8;
+    --bg-blue-3:#7e9ef5;
+    --bg-blue-4:#6ba5f0;
+        --bg-black-2: rgb(35, 35, 35);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  background-color: #95c2de;
+      background: linear-gradient(
+        to right,
+        var(--bg-black-2) 0%,
+        var(--bg-black-2) 60%,
+        var(--bg-blue-2) 50%,
+        var(--bg-blue-2) 100%
+      );
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+}
+
+.mainbox {
+  background-color: #95c2de;
+  background-color: var(--bg-blue-3);
+  margin: auto;
+  height: 600px;
+  width: 600px;
+  position: relative;
+}
+
+  .err {
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11rem;
+    position:absolute;
+    left: 20%;
+    top: 8%;
+  }
+
+.far {
+  position: absolute;
+  font-size: 8.5rem;
+  left: 42%;
+  top: 15%;
+  color: #ffffff;
+}
+
+ .err2 {
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11rem;
+    position:absolute;
+    left: 68%;
+    top: 8%;
+  }
+
+.msg {
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.6rem;
+    position:absolute;
+    left: 16%;
+    top: 45%;
+    width: 75%;
+  }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
