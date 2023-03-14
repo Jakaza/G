@@ -12,4 +12,10 @@
     color: #FFF;
     background-color: black;
 }
+h4{
+    text-transform: capitalize;
+}
+p{
+    text-transform: uppercase;
+}
 

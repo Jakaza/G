@@ -18,6 +18,11 @@ app.get('/', (req, res) => {
     res.render('index', { data })
 })
 
+app.get('/_index', (req, res) => {
+    res.render('_index')
+})
+
+
 app.post('/contact/sendMail', (req, res) => {
     // Send Me An Email
     // get input feild values
