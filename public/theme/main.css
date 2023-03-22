@@ -659,6 +659,83 @@ main .details p{
 /*============================================================*/
 
 
+
+/*=========================== MINI PROJECTS ========================*/
+
+.mini-project__container .side-title p{
+    text-align: center;
+}
+
+@media (max-width: 1080px){
+    .mini-project__content .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+.mini-project__content .projects-grid {
+    list-style: none;
+    padding: 0px;
+    margin: 50px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    position: relative;
+}
+
+.project-inner {
+    color: var(--bg-blue-5);
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    height: 100%;
+    border-radius: 4px;
+    /* background-color: #112240; */
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    overflow: auto;
+    cursor: pointer;
+    overflow: hidden;
+    min-height: 300px;
+}
+
+.project-inner .min-name{
+    width: 100%;
+    padding: 2rem 1.75rem;
+    background-color: #112240;
+}
+
+.project-inner .min-content,
+.project-inner .min-languages
+{
+    color: var(--bg-black-2);
+    padding: 2rem 1.75rem;
+}
+
+.project-inner:hover{
+    transform: scale(1.1);
+}
+
+.project-inner .min-languages{
+    width: 100%;
+    /* height: fit-content; */
+    /* background-color: #1c3258; */
+}
+.min-languages_flex {
+    display: flex;
+}
+.min-languages_flex li{
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+/*============================================================*/
+
+
+
 /*=========================== CONTACT ME ========================*/
 
 .contact_me-conatiner{
