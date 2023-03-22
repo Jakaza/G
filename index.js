@@ -36,7 +36,15 @@ app.post('/contact/sendMail', (req, res) => {
         res.status(400).send({
             message: "failed"
         });
-    } else {
+        return;
+    } else if(isValidEmail(email)){
+        res.status(400).send({
+            message: "failed",
+            error: 'invalid email address'
+        });
+        return;
+    }
+    else {
         // Save data to database or process it in some way
         sendMessage(userName, userEmail, userSubject, userMessage)
             .catch(error => {
@@ -54,6 +62,34 @@ app.post('/contact/sendMail', (req, res) => {
 
 })
 
+
+function isValidEmail(email){
+    var emailRegex = /^[-!#$%&'*+\/0-9=?A-Z^_a-z{|}~](\.?[-!#$%&'*+\/0-9=?A-Z^_a-z`{|}~])*@[a-zA-Z0-9](-*\.?[a-zA-Z0-9])*\.[a-zA-Z](-?[a-zA-Z0-9])+$/;
+
+    if (!email)
+    return false;
+
+    if(email.length>254)
+        return false;
+
+    var valid = emailRegex.test(email);
+    if(!valid)
+        return false;
+
+    // Further checking of some things regex can't handle
+    var parts = email.split("@");
+    if(parts[0].length>64)
+        return false;
+
+    var domainParts = parts[1].split(".");
+    if(domainParts.some(function(part) { return part.length>63; }))
+        return false;
+    return true;
+}
+
+
+
+
 async function sendMessage(userName, userEmail, userSubject, userMessage) {
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
@@ -70,6 +106,7 @@ async function sendMessage(userName, userEmail, userSubject, userMessage) {
         sender: `${userEmail}`,
         from: `${userEmail}`, // sender address
         to: "goodnessjakazac@gmail.com",
+        replyTo: `${userEmail}`,
         subject: `${userSubject}`, // Subject line
         text: `${userMessage}`, // plain text body
         html: `<b>${userMessage}</b>`, // html body
@@ -79,16 +116,13 @@ async function sendMessage(userName, userEmail, userSubject, userMessage) {
         sender: "goodnessjakazac@gmail.com",
         from: "goodnessjakazac@gmail.com", // sender address
         to: `${userEmail}`,
-        replyTo: `${userEmail}`,
+        replyTo: 'goodnessjakazac@gmail.com',
         subject: `GOT YOUR EMAIL`, // Subject line
         text: `Hey ${userName}`, // plain text body
         html: `
-        <p>Dear <b>Kentura</b></p>
-        <br>
+        <p>Dear <b>${userName}</b></p>
         <p>This is to confirm I have received this email. I will get back to you as soon as possible.</p>
-        <br>
         <p>Regards,</p>
-        <br>
         <p>Themba G Chauke</p>
         `, // html body
     });
