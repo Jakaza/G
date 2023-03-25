@@ -15,9 +15,6 @@ app.set("views", path.join(__dirname, 'server', 'views'))
 app.set('view engine', 'ejs')
 
 
-
-connectDB();
-
 // routes
 app.use(require('./server/routes/page'));
 app.use('/email', require('./server/routes/api/mail'));
