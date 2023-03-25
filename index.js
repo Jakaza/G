@@ -4,7 +4,6 @@ const nodemailer = require("nodemailer");
 const bodyParser = require('body-parser')
 const app = express()
 require("dotenv").config()
-const connectDB = require('./server/config/dbConnection')
 const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json())
