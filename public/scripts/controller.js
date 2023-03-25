@@ -49,11 +49,12 @@ formEl.addEventListener('submit', async el => {
     };
 
     try {
-        const response = await fetch('/contact/sendMail', requestOptions);
+        const response = await fetch('/email/api/sendemail', requestOptions);
         const responseData = await response.json();
 
-        if (response.status == 400 || responseData.message == 'failed') {
-            displaySuccessMessage(false)
+        if ((response.status == 400 || response.status == 422) || responseData.message == 'failed') {
+            const { error, hint } = responseData
+            displaySuccessMessage(false, error, hint)
         } else {
             displaySuccessMessage(true)
             formEl.reset();
@@ -64,7 +65,7 @@ formEl.addEventListener('submit', async el => {
     }
 })
 
-function displaySuccessMessage(status) {
+function displaySuccessMessage(status, error, hint) {
     let template = `
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
@@ -83,31 +84,32 @@ function displaySuccessMessage(status) {
         template += `
                 <div class="alert alert-success d-flex align-items-center" role="alert">
         <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill" /></svg>
-        <div>
-            Message Succefully Submitted
-        </div>
+                <div class="alert-dismissible fade show">
+                                    Message Succefully Submitted
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                        aria-label="Close"></button>
+                                </div>
         </div>  `
     } else {
         template += `
         <div class="alert alert-danger d-flex align-items-center" role="alert">
         <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
-            <div>
-            Something Went Wrong - Message was not send
-        </div>
+        <div class="alert-dismissible fade show">
+                                    ${error} - ${hint}
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                        aria-label="Close"></button>
+                                </div>
         </div>
         `
     }
 
     document.getElementById('feedback_section').innerHTML = template;
 
-    setTimeout(_ => {
+    document.querySelector('.btn-close').addEventListener('click', () => {
         document.getElementById('feedback_section').innerHTML = ''
-    }, 3000)
+    })
 }
 
-console.log(formEl);
-
-
-
-
-
+formEl.addEventListener('keypress', _ => {
+    document.getElementById('feedback_section').innerHTML = ''
+})
