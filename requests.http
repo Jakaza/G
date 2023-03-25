@@ -1,0 +1,8 @@
+
+
+GET http://localhost:5000 HTTP/1.1
+
+###
+
+POST http://localhost:5000/email/api/sendemail HTTP/1.1
+content-type: application/json
