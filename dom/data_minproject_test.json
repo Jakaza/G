@@ -1,46 +1,9 @@
-[
-    {
-        "title": "Expanding Card",
-        "subtitle": "Expand card on click",
-        "description": "Expanding Card using HTML, CSS and JavaScript. You can create card expand animation very easily if you know basic HTML and CSS.",
-        "source": "https://github.com/bradtraversy/50projects50days/tree/master/expanding-cards",
-        "preview": "https://50projects50days.com/projects/expanding-cards/",
-        "language": "Javascrip"
-    },
-    {
-        "title": "Modal View",
-        "subtitle": "create a modal window which is used on websites to get users to do or see something specific",
-        "description": "A good example of a modal window would be if a user made changes in a site without saving them and tried to go to another page. You can create a modal window that warns them to save their changes or else that information will be lost.",
-        "source": "https://github.com/bradtraversy/50projects50days/tree/master/expanding-cards",
-        "preview": "https://50projects50days.com/projects/expanding-cards/",
-        "language": "Javascrip"
-    },
-    {
-        "title": "restaurant menu page",
-        "subtitle": "restaurant menu page that filters through the different food menus",
-        "description": "This is a fun project that will teach you higher order functions like map, reduce, and filter",
-        "source": "https://github.com/bradtraversy/50projects50days/tree/master/expanding-cards",
-        "preview": "https://50projects50days.com/projects/expanding-cards/",
-        "language": "Javascrip"
-    },
-    {
-        "title": "navigation bar on scroll",
-        "subtitle": "navigation bar on scroll",
-        "description": "navbar that slides down when scrolling and then stays at a fixed position at a certain height.",
-        "source": "https://github.com/bradtraversy/50projects50days/tree/master/expanding-cards",
-        "preview": "https://50projects50days.com/projects/expanding-cards/",
-        "language": "Javascrip"
-    },
-    {
-        "title": "countdown clock",
-        "subtitle": "countdown clock",
-        "description": "countdown clock which can be used when a new product is coming out or a sale is about to end on an ecommerce site.",
-        "source": "https://github.com/bradtraversy/50projects50days/tree/master/expanding-cards",
-        "preview": "https://50projects50days.com/projects/expanding-cards/",
-        "language": "Javascrip"
-    }
-]
-
-
-
+{
+    "title": "Expanding Card",
+    "subtitle": "Expand card on click",
+    "description": "Expanding Card using HTML, CSS and JavaScript. You can create card expand animation very easily if you know basic HTML and CSS.",
+    "source": "https://github.com/bradtraversy/50projects50days/tree/master/expanding-cards",
+    "preview": "https://50projects50days.com/projects/expanding-cards/",
+    "language": "Javascrip"
+}
 
