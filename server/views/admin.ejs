@@ -8,35 +8,30 @@
 
 
     <script>
-        var username = prompt("Enter in the username");
-        var password = prompt("Enter in the password");
+            var username = prompt("Enter in the username");
+            var password = prompt("Enter in the password");
 
-        if (username && password) {
+            const formData = new FormData();
+            const requestData = Object.fromEntries(formData.entries());
+            const xhrRequest = new XMLHttpRequest()
+            const headers = new Headers({ 'Content-Type': 'application/json' });
+            
+            formData.append('username', username)
+            formData.append('password', password)
 
-            alert('Ready to go to the dashboard')
+            const requestOptions = {
+              method: 'POST',
+              headers,
+              body: JSON.stringify(requestData)
+            };    
 
-            // try {
+            try {
+              const response = await fetch('/user/admin', requestOptions);
+              const responseData = await response.json();
 
-            // const response = await fetch('/email/api/sendemail', requestOptions);
-            // const responseData = await response.json();
-
-            // if ((response.status == 400 || response.status == 422) || responseData.message == 'failed') {
-            //     const { error, hint } = responseData
-            //     displaySuccessMessage(false, error, hint)
-            // } else {
-            //     displaySuccessMessage(true)
-            //     formEl.reset();
-            //     console.log(responseData);
-            // }
-            // } catch (error) {
-            //     displaySuccessMessage(false)
-            // }
-
-        }else{
-            alert('Back to index page')
-        }
-
-
+            } catch (error) {
+               console.log(error)
+            }
 
     </script>
 
