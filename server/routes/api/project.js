@@ -6,12 +6,11 @@ const validateInput = require('../../middleware/validateInput')
 
 router.post('/api/project/new', projectController.newMiniProject)
 
-router.post('/api/project/hide/:id', projectController.hideProject)
+router.post('/api/project/hide', projectController.hideProject)
 
-router.post('/api/project/show/:id' , projectController.showProject )
+router.post('/api/project/show', projectController.showProject)
 // router.delete()
 // router.put()
-
 
 
 // mini project

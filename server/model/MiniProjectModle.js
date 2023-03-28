@@ -21,8 +21,9 @@ const projectSchema = new Schema({
         require: true
     },
     hidden: Boolean,
-    meta: {
-        download: Number
+    download: {
+        type: Number,
+        default: 0
     }
 })
 
