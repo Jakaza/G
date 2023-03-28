@@ -5,15 +5,18 @@ const newMiniProject = async (req, res , next ) => {
     const data = req.body;
 
     const minProject = new MiniProject(data)
+  
     try {
         const result = await minProject.save();
+        res.json(result)
+      
     } catch (error) {
         res.status(500).json({
-            error: error.message
+            error
         })
     }
     
-    res.json(result)
+    
 }
 
 
