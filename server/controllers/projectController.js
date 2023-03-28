@@ -8,7 +8,9 @@ const newMiniProject = async (req, res , next ) => {
     try {
         const result = await minProject.save();
     } catch (error) {
-        res.status(500).json(error)
+        res.status(500).json({
+            error: error.message
+        })
     }
     
     res.json(result)
