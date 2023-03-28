@@ -4,7 +4,7 @@ const mailController = require('../../controllers/mailController')
 const projectController = require('../../controllers/projectController')
 const validateInput = require('../../middleware/validateInput')
 
-router.post('/api/project/new')
+router.get('/api/project/new', projectController.newProject)
 
 router.post('/api/project/hide/:id', projectController.hideProject)
 

@@ -1,5 +1,10 @@
 const newProject = (req, res) => {
-    //Add new project to database
+    
+
+
+    res.status(200).json({
+        message: 'Ready to upload new project'
+    })
 
 }
 
