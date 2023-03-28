@@ -19,6 +19,7 @@ app.use(countRequest)
 
 // routes
 app.use(require('./server/routes/page'));
+app.use(require('./server/routes/api/project'))
 app.use('/email', require('./server/routes/api/mail'));
 
 
