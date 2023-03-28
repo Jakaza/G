@@ -43,6 +43,9 @@ const countRequest = (req, res, next) => {
     // }).catch(err => {
     //   console.log('Error Occured')
     // })
+
+
+    next()
   }
 
 module.exports = {countRequest}
