@@ -19,6 +19,11 @@ const workPage = (req, res) => {
     res.render('projects', data)
 }
 
+const adminPage = (req, res) =>{
+
+    res.status(200).render('admin')
+}
+
 const contactPage = (req, res) => {
 
     res.json("Contact Page Controller")
@@ -28,7 +33,8 @@ const contactPage = (req, res) => {
 module.exports = {
     homePage,
     contactPage,
-    workPage
+    workPage, 
+    adminPage
 }
 
 

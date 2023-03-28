@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router();
 const pageController = require('../controllers/pageController')
+const validateadmin = require('../middleware/validateadmin')
 
 // home - index.html
 router.get('^/$|/index(.html)?', pageController.homePage)
@@ -11,7 +12,6 @@ router.get('/work', pageController.workPage)
 // contact me
 router.get('/contact', pageController.contactPage)
 
-// one project - detail.html
-router.get('/work/:slag')
+router.get('/user/admin',  pageController.adminPage, validateadmin.verifyuser);
 
 module.exports = router;
