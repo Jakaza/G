@@ -2,9 +2,6 @@
 const winston = require('winston')
 const Log= require('../model/LogModel')
 
-// create logger model 
-const Log = mongoose.model('log', logSchema)
-
 // setup winston
 const logger = winston.createLogger({
     level: 'info',
