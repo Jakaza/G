@@ -1,12 +1,17 @@
 
 const MiniProject = require('../model/MiniProjectModle')
 
-const newMiniProject = (req, res , next ) => {
-    
+const newMiniProject = async (req, res , next ) => {
     const data = req.body;
 
-    res.json(data)
-
+    const minProject = new MiniProject(data)
+    try {
+        const result = await minProject.save();
+    } catch (error) {
+        res.status(500).json(error)
+    }
+    
+    res.json(result)
 }
 
 
