@@ -1,10 +1,11 @@
-const newProject = (req, res) => {
+
+const MiniProject = require('../model/MiniProjectModle')
+
+const newMiniProject = (req, res , next ) => {
     
+    const data = req.body;
 
-
-    res.status(200).json({
-        message: 'Ready to upload new project'
-    })
+    res.json(data)
 
 }
 
@@ -41,5 +42,5 @@ const showProject = async (req, res)=>{
 module.exports = {
     hideProject,
     showProject,
-    newProject
+    newMiniProject
 }

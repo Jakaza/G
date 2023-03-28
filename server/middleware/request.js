@@ -1,6 +1,6 @@
 // middleware to track number of requests
 const winston = require('winston')
-const Log= require('../model/LogModel')
+const Log = require('../model/LogModel')
 
 // setup winston
 const logger = winston.createLogger({
