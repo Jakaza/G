@@ -7,4 +7,8 @@ router.post('/api/project/new')
 // router.delete()
 // router.put()
 
+
+router.post('/api/miniproject/new')
+
+
 module.exports = router;
