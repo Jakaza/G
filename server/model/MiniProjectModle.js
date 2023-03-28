@@ -16,13 +16,17 @@ const projectSchema = new Schema({
     },
     source: String,
     preview: String,
-    languages: {
+    language: {
         type: String,
         require: true
     },
-    hidden: Boolean,
+    hidden: {
+        type: Boolean,
+        default: true
+    },
     meta: {
-        download: Number
+        download: Number,
+        default: 0
     }
 })
 
