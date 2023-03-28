@@ -2,7 +2,7 @@ const path = require("path")
 const express = require('express')
 const nodemailer = require("nodemailer");
 const bodyParser = require('body-parser')
-const countRequest = require('./server/middleware/request')
+const {countRequest} = require('./server/middleware/request')
 const app = express()
 require("dotenv").config()
 const PORT = process.env.PORT || 3000;
@@ -14,6 +14,8 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.set("views", path.join(__dirname, 'server', 'views'))
 app.set('view engine', 'ejs')
 
+
+app.use(countRequest)
 
 // routes
 app.use(require('./server/routes/page'));
@@ -31,7 +33,6 @@ app.use('/email', require('./server/routes/api/mail'));
 
 
 
-app.use(countRequest)
 
 
 app.use('/*', (req, res) => {
