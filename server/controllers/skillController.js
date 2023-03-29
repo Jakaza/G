@@ -57,22 +57,10 @@ const showSkill = async (req, res) => {
 }
 
 
-const removeSkill = async (req , res) =>{
-  const id = req.query.id;
-  if(id){
-    try{
-          const doc = await Skill.findByIdAndRemove(id)
-          res.json(doc)
-  
-      }catch(error){
-        console.log('Failed to update');
-      }
-    
-  }else{
-    res.status(204).json({
-      message: "empty content"
-    })
-  }
+const removeSkill = async(req , res) =>{
+    const id = req.params['id']
+
+    res.json({id})
 }
 
 
