@@ -1,7 +1,13 @@
+const MiniProject = require('../model/MiniProjectModle');
 
-
-const homePage = (req, res) => {
+const homePage = async (req, res) => {
     //This data must come from database or cache
+
+    const doc = await MiniProject.find({})   
+
+    console.log(doc)
+
+
     const data = {
         title: 'Themba G Chauke | Undergraduate Computer Science Student.'
     };
