@@ -297,37 +297,25 @@
                 </div>
                 <div class="mini-project__content">
                     <ul class="projects-grid">
+                      <% minprojects.forEach(minproject => { %>
                         <li>
-                            <a href="/" class="project-inner">
+                            <a href="<%=minproject.preview  %>" target="_blank" class="project-inner">
                                 <div class="min-name">
-                                    <h2>Google Clone</h2>
+                                    <h2><%= minproject.title %></h2>
                                 </div>
                                 <div class="min-content">
-                                    <p>Google Clone, search webpages around the globe
-                                        Google Clone, search webpages around the globe
-                                        Google Clone, search webpages around the globe
-                                        Google Clone, search webpages around the globe
-                                    </p>
+                                    <p> <%= minproject.description%> </p>
                                 </div>
                                 <div class="min-languages">
                                     <ul class="min-languages_flex">
-                                        <li class="javascript">Javascript</li>
+                                        <li class="<%=  minproject.languages %>"><%= minproject.languages%></li>
                                     </ul>
                                 </div>
-                            </a>
+                            </a> 
                         </li>
-                        <li>
-                            <div class="project-inner"></div>
-                        </li>
-                        <li>
-                            <div class="project-inner"></div>
-                        </li>
-                        <li>
-                            <div class="project-inner"></div>
-                        </li>
-                        <li>
-                            <div class="project-inner"></div>
-                        </li>
+                      <% }); %>
+                      
+
 
                     </ul>
                 </div>

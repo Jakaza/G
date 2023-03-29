@@ -1,46 +1,50 @@
 const MiniProject = require('../model/MiniProjectModle');
 
 const homePage = async (req, res) => {
-    //This data must come from database or cache
+  //This data must come from database or cache
 
-    const doc = await MiniProject.find({})   
-
-    console.log(doc)
+  const doc = await MiniProject.find({})
 
 
-    const data = {
-        title: 'Themba G Chauke | Undergraduate Computer Science Student.'
-    };
-    res.render('index', data)
+
+
+  const data = {
+    title: 'Themba G Chauke | Undergraduate Computer Science Student.',
+    minprojects: doc
+  };
+
+  console.log(data)
+
+  res.render('index', data)
 }
 
 const workPage = (req, res) => {
-    //This data must come from database or cache
-    const data = {
-        sen: 'This data must come from database or cache',
-        title: 'Themba G Chauke | List of all projects i worked on.'
-    };
+  //This data must come from database or cache
+  const data = {
+    sen: 'This data must come from database or cache',
+    title: 'Themba G Chauke | List of all projects i worked on.'
+  };
 
 
-    res.render('projects', data)
+  res.render('projects', data)
 }
 
-const adminPage = (req, res) =>{
+const adminPage = (req, res) => {
 
-    res.status(200).render('admin')
+  res.status(200).render('admin')
 }
 
 const contactPage = (req, res) => {
 
-    res.json("Contact Page Controller")
+  res.json("Contact Page Controller")
 
 }
 
 module.exports = {
-    homePage,
-    contactPage,
-    workPage, 
-    adminPage
+  homePage,
+  contactPage,
+  workPage,
+  adminPage
 }
 
 
