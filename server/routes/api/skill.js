@@ -1,15 +1,15 @@
 const express = require('express');
 const router = express.Router();
+const skillController = require('../../controllers/skillController');
 
+router.get('/api/skills', skillController.listSkill)
 
-router.get('/api/skill')
+router.post('/api/skill/new' , skillController.newSkill)
 
-router.post('/api/skill/new')
+router.delete('/api/skill/:id', skillController.removeSkill)
 
-router.delete('/api/skill/:id')
+router.post('/api/skill/hide', skillController.hideSkill)
 
-router.post('/api/skill/hide')
-
-router.post('/api/skill/show')
+router.post('/api/skill/show', skillController.showSkill )
 
 module.exports = router;

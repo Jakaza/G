@@ -1,6 +1,19 @@
 
 const Skill = require('../model/SkillModel')
 
+
+const listSkill = async (req, res, next) => {
+    try {
+      const doc = await Skill.find({ })
+      res.json(doc)
+    } catch (error) {
+      res.status(500).json({
+        error
+      })
+    }
+}
+
+
 const newSkill = async (req, res, next) => {
     const data = req.body;
     const newSkill = new Skill(data)
@@ -44,8 +57,17 @@ const showSkill = async (req, res) => {
 }
 
 
+const removeSkill = async(req , res) =>{
+    const id = req.params['id']
+
+    res.json({id})
+}
+
+
 module.exports = {
+    listSkill,
     newSkill,
     hideSkill,
-    showSkill
+    showSkill,
+    removeSkill
   }
