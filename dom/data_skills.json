@@ -1,0 +1,94 @@
+[
+    {
+        "name": "java",
+        "level": 80,
+        "icon": "devicon-java-plain"
+    },
+    {
+        "name": "javascript",
+        "level": 90,
+        "icon": "devicon-javascript-plain"
+    },
+    {
+        "name": "nodejs",
+        "level": 70,
+        "icon": "devicon-nodejs-plain"
+    },
+    {
+        "name": "android",
+        "icon": "devicon-android-plain"
+    },
+    {
+        "name": "mysql",
+        "level": 65,
+        "icon": "devicon-mysql-plain"
+    },
+    {
+        "name": "oracle",
+        "level": 70,
+        "icon": "devicon-oracle-original"
+    },
+    {
+        "name": "git",
+        "level": 75,
+        "icon": "devicon-git-plain"
+    },
+    {
+        "name": "github",
+        "level": 95,
+        "icon": "evicon-github-original"
+    },
+    {
+        "name": "linux commands",
+        "level": 70,
+        "icon": "devicon-linux-plain"
+    },
+    {
+        "name": "mongodb",
+        "level": 60,
+        "icon": "devicon-mongodb-plain"
+    },
+    {
+        "name": "firebase",
+        "icon": "devicon-firebase-plain"
+    },
+    {
+        "name": "docker",
+        "icon": "devicon-docker-plain"
+    },
+    {
+        "name": "tomcat",
+        "icon": "devicon-tomcat-line"
+    },
+    {
+        "name": "vscode",
+        "level": 90,
+        "icon": "devicon-vscode-plain"
+    },
+    {
+        "name": "php",
+        "level": 70,
+        "icon": "devicon-php-plain"
+    },
+    {
+        "name": "CSS3",
+        "level": 80,
+        "icon": "devicon-css3-plain"
+    },
+    {
+        "name": "HTML5",
+        "level": 80,
+        "icon": "devicon-html5-plain"
+    },
+    {
+        "name": "HTML & CSS",
+        "level": 85,
+        "icon": "devicon-html5-plain"
+    },
+    {
+        "name": "express",
+        "level": 65,
+        "icon": "devicon-express-original"
+    }
+
+]
