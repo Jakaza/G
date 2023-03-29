@@ -4,7 +4,8 @@ const Schema = mongoose.Schema;
 const skillSchema = new Schema({
     name: {
         type: String,
-        require: true
+        require: true,
+        unique: true
     }, 
     level: {
         type: Number,
