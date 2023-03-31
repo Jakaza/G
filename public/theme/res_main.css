@@ -191,15 +191,33 @@
     /*
         ABOUT-ME SEC
     */
-
-
-    .details h1{
+    .title h1{
+        font-family:'Source Sans Pro', sans-serif;
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
         font-size: 40px;
-        letter-spacing: 0.5px;
-        color: var(--c-white-2);
     }
 
+    .heading-sec__main::after {
+        height: 5px;
+        width: 8rem;
+        background:var(--bg-blue-2);
+    }
+
+    .about__content {
+        flex-direction: column;
+    }
+
+    .about__content-main{
+        width: 100%;
+    }
+
+    .about__content-skills{
+        width: 100%;
+    }
+
+    #about-btn{
+        display: none;
+    }
 
 }
