@@ -97,7 +97,7 @@
 
 
 /*
-    RESPONSIVE TABLATE  [Apple smartphones 750 to smaller]
+    RESPONSIVE SMARTPHONES  [Apple smartphones 750 to smaller]
 */
 
 
@@ -106,19 +106,28 @@
     .inner{
         width: 95%;
     }
-    /* header{
 
-    }
     main {
         background: linear-gradient(
             to bottom,
             var(--bg-black-2) 0%,
-            var(--bg-black-2) 60%,
+            var(--bg-black-2) 70%,
             var(--bg-blue-2) 50%,
             var(--bg-blue-2) 100%
     
           );
-    } */
+    }
+
+    header{
+        background: linear-gradient(
+            to bottom,
+            var(--bg-black-2) 0%,
+            var(--bg-black-2) 100%,
+            var(--bg-blue-2) 50%,
+            var(--bg-blue-2) 100%
+    
+          );
+    }
 
     /*
         NAVBAR SEC
@@ -142,16 +151,55 @@
     .user-details{
         width: 100%;
         padding: 10% 0 0 0;
-        background-color: #e85e5e;
     }
 
     .underline{
         width: 7rem;
         height: .30rem;
         margin-bottom: 1.10rem;
-        background: var(--bg-blue-2);
     }
 
+    .details h1{
+        font-weight: 500;
+    }
+    
+
+    .details p{
+        font-family:'Muti', sans-serif;
+        font-size: 16px;
+    }
+    .user-profile{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .user-profile-pic{
+        width: 250px;
+        height: 350px;
+    }
+
+    .handsome{
+        margin-top: -2.535em;
+        border: 2px solid var(--bg-blue-2);
+        margin-left: -1em;
+        background-image: url('/public/images/profile.jpg');
+    }
+
+
+
+    /*
+        ABOUT-ME SEC
+    */
+
+
+    .details h1{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 40px;
+        letter-spacing: 0.5px;
+        color: var(--c-white-2);
+    }
 
 
 }
