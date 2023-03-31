@@ -1,0 +1,157 @@
+/*
+    RESPONSIVE TABLATE 
+*/
+
+@media only screen and (max-width: 885px) {
+    nav .links  li a {color: var(--bg-blue-5);}
+    nav .logo{
+        width: 3rem;
+        height: 3rem;
+    }
+    .inner{
+        width: 90%;
+    }
+
+    /*
+        HERO SEC
+    */
+    .user-details{
+        width: 62%;
+    }
+
+    .user-profile{
+        width: 38%;
+    }
+    .user-profile-pic{
+        width: 200px;
+        height: 300px;
+        background-color: var(--bg-blue-5);
+    }
+
+
+
+    /*
+        SKILLS SEC
+    */
+
+    .skills_skill{
+        min-width: 100px;
+        padding: 5px 10px;
+    }
+
+    .skills_skill p i{
+        display: none;
+    }
+
+
+    /*
+        SKILLS SEC
+    */
+    .service_main_container{
+        width: 80%;
+    }
+
+    /*
+        PROJECT SEC
+    */
+
+    .project-tech-list , 
+.project-links {
+    margin: 15px 0px 10px;
+
+}
+
+    .project-links{
+        position: absolute;
+        bottom: 0;
+        right: 5px;
+        margin: 0;
+        /* background-color: red; */
+    }
+
+    .project-links li{
+        margin: 0 10px;
+        position: relative;
+    }
+
+    .project__icon{
+        color: var(--bg-blue-4);
+        font-size: 30px;
+    }
+
+    
+
+    .contact__me{
+        width: 85%;
+    }
+
+    .contact__me label{
+        font-weight: 500;
+        font-size: 19px;
+    }
+    
+
+
+}
+
+
+
+/*
+    RESPONSIVE TABLATE  [Apple smartphones 750 to smaller]
+*/
+
+
+
+@media only screen and (max-width: 750px) {
+    .inner{
+        width: 95%;
+    }
+    /* header{
+
+    }
+    main {
+        background: linear-gradient(
+            to bottom,
+            var(--bg-black-2) 0%,
+            var(--bg-black-2) 60%,
+            var(--bg-blue-2) 50%,
+            var(--bg-blue-2) 100%
+    
+          );
+    } */
+
+    /*
+        NAVBAR SEC
+    */
+
+    nav .links{
+        display: none;
+    }
+    nav .nav-bar{
+        display: block;
+    }
+
+    /*
+        MAIN SEC
+    */
+    main .inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .user-details{
+        width: 100%;
+        padding: 10% 0 0 0;
+        background-color: #e85e5e;
+    }
+
+    .underline{
+        width: 7rem;
+        height: .30rem;
+        margin-bottom: 1.10rem;
+        background: var(--bg-blue-2);
+    }
+
+
+
+}

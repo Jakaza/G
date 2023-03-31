@@ -1,13 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include('partials/head',title ) %>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title%>
+    </title>
+    <!-- Boostrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Devicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <link rel="stylesheet" href="/theme/main.css">
+    <link rel="stylesheet" href="/public/theme/main.css">
+    <link rel="stylesheet" href="/public/theme/res_main.css">
+    <!-- <script>
+        (_ => {
+            const documentBody = document.getElementById('index_body')
+            const screenSize = window.innerWidth
+            if (screenSize < 839) {
+                location.href = "_index"
+            }
+        })()
+    </script> -->
+
+</head>
 
     <body id="index_body" class="">
 
-
         <header>
+            <div class="inner">
+                <nav>
+                    <div class="logo">
+                        <!-- <img src="/images/logo.png" width="100%" height="100%" alt="" srcset=""> -->
+                        <img src="/public/images/logo.png" width="100%" height="100%" alt="" srcset="">
+                    </div>
+
+                    <ul class="links">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Me</a></li>
+                        <li><a href="">Projects</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+
+                    <div class="nav-bar">
+                        <span>
+                            <i id="open-btn" class="fa-solid fa-bars"></i>
+                            <i id="close-btn" class="fa-solid hide-btn fa-grip-lines"></i>
+                        </span>
+                    </div>
+
+                </nav>
+
+            </div>
         </header>
+
+        <div class="side-menu" id="sidebar">
+            <nav>
+                <ul class="side-links">
+                    <li><a class="close" href="">My Work</a></li>
+                    <li><a class="close" href="">About Me</a></li>
+                    <li><a class="close" href="#service">Service</a></li>
+                    <li><a class="close" href="">Contact</a></li>
+                </ul>
+                <div class="social-media social-media-side-menu">
+                    <ul style="display: flex;">
+                        <li><a href="https://linkedin.com/in/g-themba-chauke" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://twitter.com/ThembaG3" target="_blank"><i
+                                    class="fa-brands fa-twitter-square"></i></a></li>
+                        <li><a href="https://www.facebook.com/malume.jakaza"><i
+                                    class="fa-brands fa-facebook-square"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram-square"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
         <main>
             <div class="inner">
                 <section class="user-details">
