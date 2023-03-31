@@ -211,13 +211,13 @@ nav .links  li a {
 .fa-grip-lines{
     font-size: 1.8rem;
     cursor: pointer;
-    color: var(--bg-black-2);
+    color: var(--bg-blue-5);
     transition: var(--transition);
 }
 
 .fa-bars:hover , 
 .fa-grip-lines:hover{
-    color: var(--bg-blue-5) !important;
+    color: var(--bg-blue-3) !important;
 }
 
 
@@ -769,7 +769,7 @@ main .details p{
     flex-wrap: wrap;
     position: relative;
     z-index: 2;
-    margin: 15px 0px 10px;
+    margin: 25px 0px 10px;
     padding: 0px;
     list-style: none;
     padding-left: 20px;
