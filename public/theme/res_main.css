@@ -220,4 +220,20 @@
         display: none;
     }
 
+    /*
+        SERVICE SEC
+    */
+
+    .service_main_container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .service_details{
+        width: 100%;
+        min-height: 350px;
+    }
+
 }
