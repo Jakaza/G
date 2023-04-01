@@ -642,6 +642,10 @@ main .details p{
     color: var(--bg-green-1);
 }
 
+.service_details  .not-av{
+    color: red;
+}
+
 .service_details  .na{
     color: red;
 }
@@ -723,6 +727,10 @@ main .details p{
     height: 350px;
     background-color: #ffffff;
     /* background-color: #4831d4; */
+}
+
+.mobile_project-details{
+    display: none;
 }
 
 .project-title{
@@ -852,6 +860,47 @@ main .details p{
     gap: 25px;
     position: relative;
 }
+
+.mini_project{
+    border-radius: 4px;
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+    overflow: hidden;
+}
+
+.head_mini{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90px;
+    color: var(--c-white-1);
+    cursor: pointer;
+}
+
+.mini_logo{
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+    /* overflow: hidden; */
+}
+
+.mini_title{
+    display: flex;
+    align-items: center;
+    height: 90px;
+}
+.mini_title h1{
+    font-family: 'Muti';
+    font-size: 24px;
+    margin: 0;
+    font-weight: 700;
+    color: var(--bg-blue-2);
+}
+
+.inner_mini{
+    height: 200px;
+    background-color: #0078d7;
+}
+
 
 .project-inner {
     color: var(--bg-blue-5);

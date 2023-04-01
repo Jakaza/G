@@ -19,10 +19,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
     <link rel="stylesheet" href="/theme/main.css">
-    <link rel="stylesheet" href="/public/theme/main.css">
-    <link rel="stylesheet" href="/public/theme/res_main.css">
+    <link rel="stylesheet" href="/theme/res_main.css">
 
-    <link rel="stylesheet" href="/public/fonts/muli/Muli.ttf">
+    <link rel="stylesheet" href="/fonts/muli/Muli.ttf">
     <!-- <script>
         (_ => {
             const documentBody = document.getElementById('index_body')
@@ -42,7 +41,7 @@
             <nav>
                 <div class="logo">
                     <!-- <img src="/images/logo.png" width="100%" height="100%" alt="" srcset=""> -->
-                    <img src="/public/images/logo.png" width="100%" height="100%" alt="" srcset="">
+                    <img src="/images/logo.png" width="100%" height="100%" alt="" srcset="">
                 </div>
 
                 <ul class="links">
@@ -186,14 +185,15 @@
                         </div>
                         <div class="skills_skill javascript f-souce">
                             <p>
-                                <i class="devicon-javascript-plain"></i>
-                                Javascript
+                                <i class="devicon-nodejs-plain"></i>
+                                Node Js
                             </p>
+
                         </div>
                         <div class="skills_skill nodejs f-souce">
                             <p>
-                                <i class="devicon-nodejs-plain"></i>
-                                Node Js
+                                <i class="devicon-javascript-plain"></i>
+                                Javascript
                             </p>
                         </div>
                         <div class="skills_skill mysql f-souce">
@@ -252,15 +252,15 @@
                 <div class="service_main_container">
                     <section class="service_sidebar">
                         <ul>
-                            <li class="service_side-btn web">Web Dev</li>
-                            <li class="service_side-btn mobile active">Mobile</li>
+                            <li class="service_side-btn active web">Web Dev</li>
+                            <li class="service_side-btn mobile ">Mobile</li>
                             <li class="service_side-btn mentor">Mentorship</li>
                             <li class="service_side-btn">Technical writing</li>
                             <li class="service_side-btn">Freelance</li>
                         </ul>
                     </section>
                     <section class="service_details">
-                        <div class="web infor hide">
+                        <div class="web infor">
                             <h4>Web Development</h4>
                             <small>
                                 <p class="status av">Available</p>
@@ -277,7 +277,7 @@
                         <div class="mobile infor  hide">
                             <h4>Mobile Development</h4>
                             <small>
-                                <p class="status av">Available</p>
+                                <p class="status not-av">Not Available</p>
                             </small>
                             <p><i class="fa-solid fa-hand-point-right"></i><b>Designing and developing mobile
                                     applications:</b> I use my programming skills and knowledge of various mobile
@@ -287,10 +287,10 @@
                             </p><a href="">Read More</a>
                         </div>
 
-                        <div class="mentor infor">
+                        <div class="mentor infor hide">
                             <h4>Mentorship</h4>
                             <small>
-                                <p class="status  av">Available</p>
+                                <p class="status  not-av">Not Available</p>
                             </small>
                             <p><i class="fa-solid fa-hand-point-right"></i><b>One-on-one mentoring:</b> I provide
                                 one-on-one mentoring to clients, answering their questions and providing guidance
@@ -362,6 +362,39 @@
                             </li>
                         </div>
                     </div>
+
+                    <div class="mobile_project-details">
+                        <div class="mobile_project_heading">
+                            <h1>Project Title</h1>
+                        </div>
+                        <div class="mobile_project-description">
+                            <p>A minimal, dark blue theme for VS Code.
+                        </div>
+
+                        <ul class="mobile_project-tech-list">
+                            <li class="vscode"><i class="devicon-android-plain"></i>VS Code</li>
+                            <li class="nodejs"><i class="devicon-nodejs-plain"></i>NodeJs</li>
+                            <li class="html">
+                                <i class="devicon-html5-plain"></i>
+                                HTML
+                            </li>
+                            <li class="html">
+                                <i class="devicon-css3-plain"></i>
+                                CSS
+                            </li>
+                            <li class="mongodb">
+                                <i class="devicon-mongodb-plain"></i>
+                                MongoDB
+                            </li>
+                        </ul>
+
+                        <div class="mobile_project-links">
+                            <button>View</button>
+                            <button>Source</button>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -375,7 +408,88 @@
             </div>
             <div class="mini-project__content">
                 <ul class="projects-grid">
-                    <% minprojects.forEach(minproject=> { %>
+
+                    <li>
+                        <div class="mini_project">
+                            <div class="head_mini">
+                                <div class="mini_logo">
+                                    <img src="/images/logo.png" width="100%" height="100%" alt="" srcset="">
+                                </div>
+                                <div class="mini_title">
+                                    <h1>Connector -J</h1>
+                                </div>
+                            </div>
+
+                            <div class="inner_mini">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mini_project">
+                            <div class="head_mini">
+                                <div class="mini_logo">
+                                    <img src="/images/logo.png" width="100%" height="100%" alt="" srcset="">
+                                </div>
+                                <div class="mini_title">
+                                    <h1>IP Finder</h1>
+                                </div>
+                            </div>
+
+                            <div class="inner_mini">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mini_project">
+                            <div class="head_mini">
+                                <div class="mini_logo">
+                                    <img src="/images/logo.png" width="100%" height="100%" alt="" srcset="">
+                                </div>
+                                <div class="mini_title">
+                                    <h1>Connector -J</h1>
+                                </div>
+                            </div>
+
+                            <div class="inner_mini">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mini_project">
+                            <div class="head_mini">
+                                <div class="mini_logo">
+                                    <img src="/images/logo.png" width="100%" height="100%" alt="" srcset="">
+                                </div>
+                                <div class="mini_title">
+                                    <h1>Connector -J</h1>
+                                </div>
+                            </div>
+
+                            <div class="inner_mini">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mini_project">
+                            <div class="head_mini">
+                                <div class="mini_logo">
+                                    <img src="/images/logo.png" width="100%" height="100%" alt="" srcset="">
+                                </div>
+                                <div class="mini_title">
+                                    <h1>Connector -J</h1>
+                                </div>
+                            </div>
+
+                            <div class="inner_mini">
+
+                            </div>
+                        </div>
+                    </li>
+                    <!-- <% minprojects.forEach(minproject=> { %>
                         <li>
                             <a href="<%=minproject.preview  %>" target="_blank" class="project-inner">
                                 <div class="min-name">
@@ -397,9 +511,12 @@
                                 </div>
                             </a>
                         </li>
-                        <% }); %>
+                        <% }); %> -->
 
                 </ul>
+                <div style="padding: 25px 0 10px 0">
+                    <h3><a href="">View More</a></h3>
+                </div>
             </div>
         </div>
     </section>
@@ -490,14 +607,13 @@
             <div class="main-footer__lower">
                 © Copyright
                 <script>document.write(new Date().getFullYear())</script>. Made by
-                <a rel="noreferrer" target="_blank" href="/">Themba G Chauke</a>
+                <a class="developer" rel="noreferrer" target="_blank" href="/">Themba G Chauke</a>
             </div>
         </div>
     </footer>
 
     <script src="/scripts/anim.js"></script>
     <script src="/scripts/controller.js"></script>
-    <script src="/public/scripts/controller.js"></script>
 
 </body>
 

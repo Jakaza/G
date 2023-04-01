@@ -1,3 +1,14 @@
+
+/* 1366 */
+
+/*
+    RESPONSIVE LABTOP WITH SMALL 1366 
+*/
+
+
+
+
+
 /*
     RESPONSIVE TABLATE 
 */
@@ -31,12 +42,16 @@
 
 
     /*
-        SKILLS SEC
+        ABOUT / SKILLS SEC
     */
+    .about__content-para{
+        padding: 0;
+    }
 
     .skills_skill{
         min-width: 100px;
         padding: 5px 10px;
+        margin: 10px 5px;
     }
 
     .skills_skill p i{
@@ -236,4 +251,103 @@
         min-height: 350px;
     }
 
+    /*
+        MAIN PROJECT SEC
+    */
+
+    .project__container{
+    height: auto;
+    }
+
+    .project__con{
+        background-color: red;
+        height: 250px;
+        position: relative;
+    }
+
+    .project-image{
+        width: 100%;
+        height: 250px;
+    }
+
+    .mobile_project-details{
+        position: absolute;
+        display: block;
+        width: 80%;
+        bottom: 20px;
+        right: 15px;
+        height: 180px;
+        padding: 5px;
+        border-radius: 4px;
+        font-family:'Muti', sans-serif;
+        background: linear-gradient(90deg, rgba(94,131,224, 0.305) 0%, rgba(94,131,232, 0.305) 20%, rgba(94, 131, 232, 0.305) 20%);
+    }
+
+    .mobile_project-tech-list {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 2;
+        margin: 5px 0;
+        padding: 0px;
+        list-style: none;
+    }
+
+    .mobile_project-tech-list li {
+        font-size: var(--fz-xs);
+        white-space: nowrap;
+        margin: 0 5px 5px 5px;
+        padding: 4px 4px;
+        border-radius: 5px;
+        color: white;
+        font-family: 'Poppins' , sans-serif;
+        background-color: #6ba5f01a;
+    }
+    .mobile_project-links{
+        position: absolute;
+        bottom: -10px;
+        background-color: red;
+        right: 2px;
+    }
+
+    .inner_mini{
+        display: none;
+    }
+
+    .head_mini{
+        justify-content: space-between;
+    }
+    .mini_logo{
+        height: 60px;
+        margin-left: 15px;
+    }
+
+    .mini_title{
+        width: 75%;
+    }
+
+
+    .project-details{
+        display: none;
+    }
+
+
+
+    /*
+        FOOTER SEC
+    */
+
+    .bio p{
+        font-family:'Muti', sans-serif;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    .main-footer__lower{
+        font-size: 16px;
+        padding: 15px 0;
+    }
+
+    .main-footer__lower a{
+        color: var(--bg-blue-2);
+    }
 }
