@@ -24,6 +24,10 @@
     "express": "^4.18.2",
     "mongoose": "^7.0.3",
     "nodemailer": "^6.9.1",
+<<<<<<< Updated upstream
+=======
+    "pg": "^8.10.0",
+>>>>>>> Stashed changes
     "winston": "^3.8.2"
   },
   "devDependencies": {

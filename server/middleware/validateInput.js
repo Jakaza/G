@@ -22,6 +22,7 @@ const validateField = (req, res, next) => {
             error: 'Missing input',
             hint: 'Fill all the input field'
         });
+        return;
     }
     if (message.length < 5) {
         res.status(400).send({
