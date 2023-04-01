@@ -1,5 +1,6 @@
 const lisElements = document.querySelectorAll('.service_side-btn')
 const inforElements = document.querySelectorAll('.infor')
+const spinButton = document.querySelector('.spin-button')
 const formEl = document.getElementById('mail_form')
 
 lisElements.forEach(button => {
@@ -34,6 +35,9 @@ function displayInformation(title) {
 
 formEl.addEventListener('submit', async el => {
     el.preventDefault();
+    spinButton.className = spinButton.className + ' loading';
+    spinButton.disabled = true;
+
     const formData = new FormData(formEl)
     const requestData = Object.fromEntries(formData.entries());
     const body = JSON.stringify(requestData);
@@ -54,8 +58,10 @@ formEl.addEventListener('submit', async el => {
 
         if ((response.status == 400 || response.status == 422) || responseData.message == 'failed') {
             const { error, hint } = responseData
+            removeSpinnerClass()
             displaySuccessMessage(false, error, hint)
         } else {
+            removeSpinnerClass()
             displaySuccessMessage(true)
             formEl.reset();
             console.log(responseData);
@@ -64,6 +70,11 @@ formEl.addEventListener('submit', async el => {
         displaySuccessMessage(false)
     }
 })
+
+function removeSpinnerClass() {
+    spinButton.disabled = false;
+    spinButton.className = spinButton.className.replace(new RegExp('(?:^|\\s)loading(?!\\S)'), '');
+}
 
 function displaySuccessMessage(status, error, hint) {
     let template = `
