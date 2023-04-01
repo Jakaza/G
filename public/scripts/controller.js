@@ -35,14 +35,8 @@ function displayInformation(title) {
 
 formEl.addEventListener('submit', async el => {
     el.preventDefault();
-
-    // Spinner
-
     spinButton.className = spinButton.className + ' loading';
-
-    // call this method to remove spinner
-    // setTimeout(removeSpinnerClass, 2000);
-
+    spinButton.disabled = true;
 
     const formData = new FormData(formEl)
     const requestData = Object.fromEntries(formData.entries());
@@ -58,24 +52,27 @@ formEl.addEventListener('submit', async el => {
         body: JSON.stringify(requestData)
     };
 
-    // try {
-    //     const response = await fetch('/email/api/sendemail', requestOptions);
-    //     const responseData = await response.json();
+    try {
+        const response = await fetch('/email/api/sendemail', requestOptions);
+        const responseData = await response.json();
 
-    //     if ((response.status == 400 || response.status == 422) || responseData.message == 'failed') {
-    //         const { error, hint } = responseData
-    //         displaySuccessMessage(false, error, hint)
-    //     } else {
-    //         displaySuccessMessage(true)
-    //         formEl.reset();
-    //         console.log(responseData);
-    //     }
-    // } catch (error) {
-    //     displaySuccessMessage(false)
-    // }
+        if ((response.status == 400 || response.status == 422) || responseData.message == 'failed') {
+            const { error, hint } = responseData
+            removeSpinnerClass()
+            displaySuccessMessage(false, error, hint)
+        } else {
+            removeSpinnerClass()
+            displaySuccessMessage(true)
+            formEl.reset();
+            console.log(responseData);
+        }
+    } catch (error) {
+        displaySuccessMessage(false)
+    }
 })
 
 function removeSpinnerClass() {
+    spinButton.disabled = false;
     spinButton.className = spinButton.className.replace(new RegExp('(?:^|\\s)loading(?!\\S)'), '');
 }
 
