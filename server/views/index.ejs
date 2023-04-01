@@ -22,15 +22,6 @@
     <link rel="stylesheet" href="/theme/res_main.css">
 
     <link rel="stylesheet" href="/fonts/muli/Muli.ttf">
-    <!-- <script>
-        (_ => {
-            const documentBody = document.getElementById('index_body')
-            const screenSize = window.innerWidth
-            if (screenSize < 839) {
-                location.href = "_index"
-            }
-        })()
-    </script> -->
 
 </head>
 
@@ -45,10 +36,10 @@
                 </div>
 
                 <ul class="links">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Me</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#contact_me">Contact</a></li>
                 </ul>
 
                 <div class="nav-bar">
@@ -66,20 +57,19 @@
     <div class="side-menu" id="sidebar">
         <nav>
             <ul class="side-links">
-                <li><a class="close" href="">My Work</a></li>
-                <li><a class="close" href="">About Me</a></li>
+                <li><a class="close" href="/projects">My Work</a></li>
+                <li><a class="close" href="#about-me">About Me</a></li>
                 <li><a class="close" href="#service">Service</a></li>
-                <li><a class="close" href="">Contact</a></li>
+                <li><a class="close" href="#contact_me">Contact</a></li>
             </ul>
             <div class="social-media social-media-side-menu">
                 <ul style="display: flex;">
                     <li><a href="https://linkedin.com/in/g-themba-chauke" target="_blank"><i
                                 class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://twitter.com/ThembaG3" target="_blank"><i
-                                class="fa-brands fa-twitter-square"></i></a></li>
+                    <li><a href="https://twitter.com/ThembaG3"><i class="fa-brands fa-twitter-square"></i></a></li>
                     <li><a href="https://www.facebook.com/malume.jakaza"><i
                                 class="fa-brands fa-facebook-square"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-instagram-square"></i></a></li>
+                    <!-- <li><a href=""><i class="fa-brands fa-instagram-square"></i></a></li> -->
                 </ul>
             </div>
         </nav>
@@ -99,15 +89,17 @@
                         methodologies, and I am always eager to learn new technologies and tools. I enjoy
                         collaborating
                         with other engineers and working in a team.</p>
-                    <a href="#mail_form" class="btn hero-btn">hire me</a>
+                    <a href="#contact_me" class="btn hero-btn">hire me</a>
 
                     <div class="social-media mt-4">
                         <ul>
                             <li><a href="https://linkedin.com/in/g-themba-chauke" target="_blank"><i
                                         class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="https://twitter.com/ThembaG3" target="_blank"><i
-                                        class="fa-brands fa-twitter-square"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-instagram-square"></i></a></li>
+                            <li><a href="https://twitter.com/ThembaG3"><i class="fa-brands fa-twitter-square"></i></a>
+                            </li>
+                            <li><a href="https://www.facebook.com/malume.jakaza"><i
+                                        class="fa-brands fa-facebook-square"></i></a></li>
+                            <!-- <li><a href=""><i class="fa-brands fa-instagram-square"></i></a></li> -->
                         </ul>
                     </div>
                     <p class="f-souce">CONNECT WITH ME</p>
@@ -125,7 +117,7 @@
     </main>
 
 
-    <section class="about_me">
+    <section class="about_me" id="about-me">
         <div class="inner">
             <div class="title">
                 <h1 class="heading-sec__main">About Me
@@ -241,7 +233,7 @@
     </section>
 
 
-    <section class="service__container">
+    <section class="service__container" id="service">
         <div class="inner">
             <div class="title">
                 <h1 class="heading-sec__main">Services</h1>
@@ -492,7 +484,7 @@
 
                 </ul>
                 <div style="padding: 25px 0 10px 0">
-                    <h3><a href="">View More</a></h3>
+                    <h3><a href="/projects">View More</a></h3>
                 </div>
             </div>
         </div>
@@ -501,7 +493,7 @@
 
 
 
-    <div class="contact_me-conatiner">
+    <div class="contact_me-conatiner" id="contact_me">
         <div class="inner">
             <div class="title">
                 <h1 class="heading-sec__main">Get In Touch</h1>

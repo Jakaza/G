@@ -198,7 +198,7 @@
         margin-top: -2.535em;
         border: 2px solid var(--bg-blue-2);
         margin-left: -1em;
-        background-image: url('/public/images/profile.jpg');
+        background-image: url(/images/profile.jpg);
     }
 
 
