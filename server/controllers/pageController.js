@@ -3,14 +3,13 @@ const MiniProject = require('../model/MiniProjectModle');
 const homePage = async (req, res) => {
   //This data must come from database or cache
 
-  const doc = await MiniProject.find({})
+  // const doc = await MiniProject.find({})
 
 
 
 
   const data = {
-    title: 'Themba G Chauke | Undergraduate Computer Science Student.',
-    minprojects: doc
+    title: 'Themba G Chauke | Undergraduate Computer Science Student.'
   };
 
   console.log(data)

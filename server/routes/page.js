@@ -12,6 +12,6 @@ router.get('/work', pageController.workPage)
 // contact me
 router.get('/contact', pageController.contactPage)
 
-router.get('/user/admin',  pageController.adminPage, validateadmin.verifyuser);
+router.get('/user/admin', pageController.adminPage, validateadmin.verifyuser);
 
 module.exports = router;

@@ -4,8 +4,8 @@ const mailController = require('../../controllers/mailController')
 const validateInput = require('../../middleware/validateInput')
 
 router.post('/api/sendemail',
-    validateInput.validateEmail,
     validateInput.validateField,
+    validateInput.validateEmail,
     mailController.sendEmail)
 
 module.exports = router;
