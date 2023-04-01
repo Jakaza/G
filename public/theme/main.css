@@ -939,6 +939,50 @@ main .details p{
     font-weight: 500;
 }
 
+.spin-button {
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    padding: 10px 16px;
+    line-height: 1.4;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Important part */
+    position: relative;
+    transition: padding-right .3s ease-out;
+}
+.spin-button.loading {
+    padding-right: 40px;
+}
+.spin-button.loading:after {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    right: 6px;
+    top: 50%;
+    width: 0px;
+    height: 0px;
+    margin-top: -2px;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-left-color: #FFF;
+    border-top-color: #FFF;
+    animation: spin .6s infinite linear, grow .3s forwards ease-out;
+}
+@keyframes spin { 
+    to {
+        transform: rotate(359deg);
+    }
+}
+@keyframes grow { 
+    to {
+        width: 20px;
+        height: 20px;
+        margin-top: -10px;
+        right: 10px;
+    }
+}
+
+
 /*============================================================*/
 
 

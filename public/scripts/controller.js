@@ -1,5 +1,6 @@
 const lisElements = document.querySelectorAll('.service_side-btn')
 const inforElements = document.querySelectorAll('.infor')
+const spinButton = document.querySelector('.spin-button')
 const formEl = document.getElementById('mail_form')
 
 lisElements.forEach(button => {
@@ -34,6 +35,15 @@ function displayInformation(title) {
 
 formEl.addEventListener('submit', async el => {
     el.preventDefault();
+
+    // Spinner
+
+    spinButton.className = spinButton.className + ' loading';
+
+    // call this method to remove spinner
+    // setTimeout(removeSpinnerClass, 2000);
+
+
     const formData = new FormData(formEl)
     const requestData = Object.fromEntries(formData.entries());
     const body = JSON.stringify(requestData);
@@ -48,22 +58,26 @@ formEl.addEventListener('submit', async el => {
         body: JSON.stringify(requestData)
     };
 
-    try {
-        const response = await fetch('/email/api/sendemail', requestOptions);
-        const responseData = await response.json();
+    // try {
+    //     const response = await fetch('/email/api/sendemail', requestOptions);
+    //     const responseData = await response.json();
 
-        if ((response.status == 400 || response.status == 422) || responseData.message == 'failed') {
-            const { error, hint } = responseData
-            displaySuccessMessage(false, error, hint)
-        } else {
-            displaySuccessMessage(true)
-            formEl.reset();
-            console.log(responseData);
-        }
-    } catch (error) {
-        displaySuccessMessage(false)
-    }
+    //     if ((response.status == 400 || response.status == 422) || responseData.message == 'failed') {
+    //         const { error, hint } = responseData
+    //         displaySuccessMessage(false, error, hint)
+    //     } else {
+    //         displaySuccessMessage(true)
+    //         formEl.reset();
+    //         console.log(responseData);
+    //     }
+    // } catch (error) {
+    //     displaySuccessMessage(false)
+    // }
 })
+
+function removeSpinnerClass() {
+    spinButton.className = spinButton.className.replace(new RegExp('(?:^|\\s)loading(?!\\S)'), '');
+}
 
 function displaySuccessMessage(status, error, hint) {
     let template = `
