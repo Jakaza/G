@@ -1,0 +1,16 @@
+*, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.card > button{
+    border: none;
+    background-color: transparent;
+}
+
+.action_buttons{
+    width: 250px !important;
+}
