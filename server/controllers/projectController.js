@@ -1,49 +1,62 @@
+const Project = require('../model/ProjectModel');
 
-const MiniProject = require('../model/MiniProjectModle')
 
-const newMiniProject = async (req, res, next) => {
+const createProject = async (req, res) => {
   const data = req.body;
-  const minProject = new MiniProject(data)
+  const newProject = new Project(data)
   try {
-    const result = await minProject.save();
+    const result = await newProject.save();
     res.json(result)
   } catch (error) {
-    res.status(500).json({
-      error
+    res.status(404).json({
+      message: "Failed To Save Data"
+    })
+  }
+}
+
+const deleteProject = async (req, res) => {
+  const id = req.params.id;
+  try {
+    const doc = await Project.findOne({ _id: id });
+    await doc.deleteOne();
+    res.json({ message: "-Project deleted." })
+  } catch (error) {
+    res.status(404).json({
+      message: "Failed To Delete -Project"
+    })
+  }
+}
+
+const editProject = async (req, res) => {
+  const id = req.params.id;
+  try {
+    const doc = await Project.findOne({ _id: id });
+    Object.assign(doc, req.body)
+    doc.save();
+    res.json(doc)
+  } catch (error) {
+    res.status(404).json({
+      message: "Failed To Delete -Project"
+    })
+  }
+}
+
+const getProject = async (req, res) => {
+  const id = req.params.id;
+  try {
+    const doc = await Project.findOne({ _id: id })
+    res.json(doc)
+  } catch (error) {
+    res.status(404).json({
+      error: "-Project is not found"
     })
   }
 }
 
 
-const hideProject = async (req, res) => {
-  const id = req.body.id;
-    try{
-        const doc = await MiniProject.findOne({ _id: id })
-        doc.hidden = false;
-        const result = await doc.save();
-        res.json(result)
-
-    }catch(error){
-      console.log('Failed to update');
-    }
-}
-
-const showProject = async (req, res) => {
-  const id = req.body.id;
-    try{
-        const doc = await MiniProject.findOne({ _id: id })
-        doc.hidden = true;
-        const result = await doc.save();
-        res.json(result)
-
-    }catch(error){
-      console.log('Failed to update');
-    }
-}
-
-
 module.exports = {
-  hideProject,
-  showProject,
-  newMiniProject
+  createProject,
+  deleteProject,
+  editProject,
+  getProject
 }

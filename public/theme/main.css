@@ -6,6 +6,10 @@ body{
     box-sizing: border-box;
 }
 
+body{
+    behavior: smooth;
+}
+
 p {
     margin: 0;
 }

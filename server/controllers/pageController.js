@@ -1,18 +1,20 @@
 const MiniProject = require('../model/MiniProjectModle');
+const Project = require('../model/ProjectModel');
+const SkillsProject = require('../model/SkillModel');
+
 
 const homePage = async (req, res) => {
   //This data must come from database or cache
-
-  // const doc = await MiniProject.find({})
-
-
-
+  const doc_skills = await SkillsProject.find({})
+  const doc_minProjects = await MiniProject.find({})
+  const doc_rojects = await Project.find({})
 
   const data = {
-    title: 'Themba G Chauke | Undergraduate Computer Science Student.'
+    title: 'Themba G Chauke | Undergraduate Computer Science Student.',
+    skills: doc_skills,
+    minProjects: doc_minProjects,
+    projects: doc_rojects
   };
-
-  console.log(data)
 
   res.render('index', data)
 }
@@ -23,14 +25,11 @@ const workPage = (req, res) => {
     sen: 'This data must come from database or cache',
     title: 'Themba G Chauke | List of all projects i worked on.'
   };
-
-
   res.render('projects', data)
 }
 
 const adminPage = (req, res) => {
-
-  res.status(200).render('admin')
+  res.status(200).render('dashboard')
 }
 
 const contactPage = (req, res) => {

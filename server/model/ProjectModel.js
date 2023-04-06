@@ -6,10 +6,6 @@ const projectSchema = new Schema({
         type: String,
         require: true
     },
-    subtitle: {
-        type: String,
-        require: true
-    },
     description: {
         type: String,
         require: true
@@ -17,13 +13,13 @@ const projectSchema = new Schema({
     source: String,
     preview: String,
     imagelink: String,
-    languages: [{ name: String }],
-    body: String,
+    languages: {
+        type: [String],
+        required: true
+    },
     hidden: Boolean,
-    meta: {
-        like: Number,
-        share: Number
-    }
+    like: Number,
+    share: Number
 })
 
 module.exports = mongoose.model('projects', projectSchema)

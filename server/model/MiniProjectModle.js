@@ -6,10 +6,6 @@ const projectSchema = new Schema({
         type: String,
         require: true
     },
-    subtitle: {
-        type: String,
-        require: true
-    },
     description: {
         type: String,
         require: true
