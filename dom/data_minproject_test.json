@@ -1,10 +1,18 @@
-{
-    "title": "Expanding Card",
-    "subtitle": "Expand card on click",
-    "description": "Expanding Card using HTML, CSS and JavaScript. You can create card expand animation very easily if you know basic HTML and CSS.",
-    "source": "https://github.com/bradtraversy/50projects50days/tree/master/expanding-cards",
-    "preview": "https://50projects50days.com/projects/expanding-cards/",
-    "language": "Javascrip",
-    "hidden:": true
-}
-
+[
+    {
+        "name": "IP Finder",
+        "description": "Get IP address of computer",
+        "source": "https://github.com/jakaza",
+        "languages": "javascript",
+        "hidden": false,
+        "download": 15
+    },
+    {
+        "name": "Card Expand",
+        "description": "View card in different formart - DOM manipulation",
+        "source": "https://github.com/jakaza",
+        "languages": "javascript",
+        "hidden": false,
+        "download": 3
+    }
+]

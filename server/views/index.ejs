@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="/theme/main.css">
     <link rel="stylesheet" href="/theme/res_main.css">
 
+    <!-- Activate Links When Design  -->
+    <!-- <link rel="stylesheet" href="/public/theme/main.css">
+    <link rel="stylesheet" href="/public/theme/res_main.css"> -->
+
     <link rel="stylesheet" href="/fonts/muli/Muli.ttf">
 
 </head>
@@ -32,7 +36,7 @@
             <nav>
                 <div class="logo">
                     <!-- <img src="/images/logo.png" width="100%" height="100%" alt="" srcset=""> -->
-                    <img src="/images/logo.png" width="100%" height="100%" alt="" srcset="">
+                    <a href="/"><img src="/images/logo.png" width="100%" height="100%" alt="" srcset=""></a>
                 </div>
 
                 <ul class="links">
@@ -131,7 +135,8 @@
             <div class="about__content">
 
                 <section class="about__content-main">
-                    <h3 class="about__content-title">Get to know me!</h3>
+                    <h3 class="about__content-title">Get to know me!
+                    </h3>
 
                     <div class="about__content-details">
                         <p class="about__content-para">
@@ -159,6 +164,7 @@
                             contribute, learn and grow. If you have a good opportunity that
                             matches my skills then don't hesitate to
                             <a href="#mail_form"> <strong>contact me.</strong> </a>
+
                         </p>
 
                     </div>
@@ -166,7 +172,18 @@
                 <section class="about__content-skills">
                     <h3 class="about__content-title">My Skills</h3>
                     <div class="about_skills-box">
-                        <div class="skills_skill java f-souce">
+
+                        <% skills.forEach(element=> { %>
+                            <div class="skills_skill <%= element.name %> f-souce">
+                                <p> <i class="<%=element.icon  %>"></i>
+                                    <%= element.name %>
+                                </p>
+                            </div>
+                            <% }); %>
+
+
+
+                                <!-- <div class="skills_skill java f-souce">
                             <p> <i class="devicon-java-plain"></i> Java</p>
                         </div>
                         <div class="skills_skill android f-souce">
@@ -223,7 +240,7 @@
                                 <i class="devicon-firebase-plain"></i>
                                 MongoDB & Firebase
                             </p>
-                        </div>
+                        </div> -->
                     </div>
 
                 </section>
@@ -344,14 +361,10 @@
                         </ul>
 
                         <div class="project-links">
-                            <li><a href=""><i class="fa-brands project__icon fa-square-github">
-
-                                    </i></a>
-
-                            </li>
-                            <li><a href=""><i
-                                        class="fa-solid project__icon s__icon  fa-arrow-up-right-from-square"></i></a>
-                            </li>
+                            <a target="__blank" href="//github-readme-stats.vercel.app/api/?username=anuraghazra"
+                                class="Button-sc-19s561s-0 dxFdrJ">Live Demo</a>
+                            <a target="__blank" href="//github-readme-stats.vercel.app/api/?username=anuraghazra"
+                                class="Button-sc-19s561s-0 dxFdrJ">Source</a>
                         </div>
                     </div>
 
@@ -380,11 +393,15 @@
                             </li>
                         </ul>
 
-                        <div class="mobile_project-links">
-                            <button>View</button>
-                            <button>Source</button>
-                        </div>
 
+
+                    </div>
+
+                    <div class="mobile_project-links">
+                        <a target="__blank" href="//github-readme-stats.vercel.app/api/?username=anuraghazra"
+                            class="Button-sc-19s561s-0 dxFdrJ">Live Demo</a>
+                        <a target="__blank" href="//github-readme-stats.vercel.app/api/?username=anuraghazra"
+                            class="Button-sc-19s561s-0 dxFdrJ">Source</a>
                     </div>
 
                 </div>
@@ -400,24 +417,40 @@
             </div>
             <div class="mini-project__content">
                 <ul class="projects-grid">
-
-                    <li>
-                        <div class="mini_project">
-                            <div class="head_mini">
-                                <div class="mini_logo">
-                                    <img src="/images/logo.png" width="100%" height="100%" alt="" srcset="">
+                    <% minProjects.forEach(element=> { %>
+                        <li>
+                            <div class="mini_project">
+                                <div class="head_mini">
+                                    <div class="mini_logo">
+                                        <img src="<%= element.icon %>" width="100%" height="100%" alt="" srcset="">
+                                    </div>
+                                    <div class="mini_title">
+                                        <h1>
+                                            <%= element.title %>
+                                        </h1>
+                                    </div>
                                 </div>
-                                <div class="mini_title">
-                                    <h1>Connector -J</h1>
+
+                                <div class="inner_mini">
+                                    <p>
+
+                                    </p>
                                 </div>
+                                <!-- <div class="project-links">
+                                    <a target="__blank"
+                                        href="//github-readme-stats.vercel.app/api/?username=anuraghazra"
+                                        class="Button-sc-19s561s-0 dxFdrJ">Live Demo</a>
+                                    <a target="__blank"
+                                        href="//github-readme-stats.vercel.app/api/?username=anuraghazra"
+                                        class="Button-sc-19s561s-0 dxFdrJ">Source</a>
+                                </div> -->
                             </div>
+                        </li>
+                        <% }); %>
 
-                            <div class="inner_mini">
 
-                            </div>
-                        </div>
-                    </li>
-                    <li>
+
+                            <!-- <li>
                         <div class="mini_project">
                             <div class="head_mini">
                                 <div class="mini_logo">
@@ -480,7 +513,7 @@
 
                             </div>
                         </div>
-                    </li>
+                    </li> -->
 
                 </ul>
                 <div style="padding: 25px 0 10px 0">
@@ -555,21 +588,7 @@
         <div class="inner">
 
             <div class="main-footer__upper">
-                <section>
-                    <div class="profile">
-                        <div class="profile_icon">
 
-                        </div>
-                        <div class="name">
-                            <h3><span class="txt-rotate" data-period="2000"
-                                    data-rotate='[ "I hope you enjoyed visiting my website.", "Come back again", "fun!" ]'></span>
-                            </h3>
-                        </div>
-                        <div class="bio">
-                            <p>Living, learning, & leveling up one day at a time.</p>
-                        </div>
-                    </div>
-                </section>
 
             </div>
 

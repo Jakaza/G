@@ -6,3 +6,32 @@ GET http://localhost:5000 HTTP/1.1
 
 POST http://localhost:5000/email/api/sendemail HTTP/1.1
 content-type: application/json
+
+###
+#Get Skill Request
+GET http://localhost:5000/api/skills HTTP/1.1
+
+###
+#Get Skill By Id Request
+GET http://localhost:5000/api/skill?id=642979586923ba98b12de4bd HTTP/1.1
+
+
+###
+#Get Skill By Id Request and update
+# PUT http://localhost:5000/api/skill?id=642979796923ba98b12de4bf HTTP/1.1
+# content-type: application/json
+
+#     {   "name": "android",
+#         "level": 75
+#     }
+
+###
+#Post Skill Request
+POST http://localhost:5000/api/skill/new HTTP/1.1
+content-type: application/json
+
+    {
+        "name": "github",
+        "level": 95,
+        "icon": "evicon-github-original"
+    }

@@ -1,0 +1,29 @@
+[
+    {
+        "title": "Harlist",
+        "description": "To do app with a focus on simplicity. Only the features you need to get things done.",
+        "source": "https://github.com/jakaza",
+        "languages": [
+            "javascript",
+            "html",
+            "css",
+            "nodeJs",
+            "react"
+        ],
+        "imagelink": "https://res.cloudinary.com/sebkay/image/upload/c_scale,w_752/v1676549597/app.harlist.io_p5fgqc.png",
+        "hidden": false
+    },
+    {
+        "title": "Inspirational Pixels",
+        "description": "Web design blog focused on helping beginners via tutorials, videos, code snippets and freebies.",
+        "source": "https://github.com/jakaza",
+        "languages": [
+            "WordPress ",
+            "html",
+            "css",
+            "nodeJs"
+        ],
+        "imagelink": "https://res.cloudinary.com/sebkay/image/upload/v1643827425/inspirationalpixels.com_aw325y.webp",
+        "hidden": false
+    }
+]

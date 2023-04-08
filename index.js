@@ -12,15 +12,17 @@ app.use(bodyParser.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(express.static(path.join(__dirname, 'public')))
 app.set("views", path.join(__dirname, 'server', 'views'))
+
 app.set('view engine', 'ejs')
 
 
-// connectDB();
+connectDB();
 app.use(countRequest)
 
 // routes
 app.use(require('./server/routes/page'));
 app.use(require('./server/routes/api/project'))
+app.use(require('./server/routes/api/skill'))
 app.use('/email', require('./server/routes/api/mail'));
 
 
@@ -32,6 +34,8 @@ app.use('/email', require('./server/routes/api/mail'));
 // app.get('/_index', (req, res) => {
 //     res.render('_index')
 // })
+
+
 
 
 
