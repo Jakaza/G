@@ -1,8 +1,11 @@
-const aboutContentPara = document.querySelectorAll(".about__content-details > .about__content-para")
+const collapsible = document.querySelectorAll(".collapsible")
 const openBtn = document.querySelector("#open-btn")
 const closeBtn = document.querySelector("#close-btn")
 const sideMenu = document.querySelector("#sidebar")
 const closeLinks = document.querySelectorAll('.close')
+
+
+
 
 
 // readLouderButton.addEventListener('click', () => {
