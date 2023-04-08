@@ -29,7 +29,15 @@ const workPage = (req, res) => {
 }
 
 const adminPage = (req, res) => {
-  res.status(200).render('dashboard')
+  res.status(200).render('admin_dashboard')
+}
+
+const adminProfile = (req, res) => {
+  res.status(200).render('admin_profile')
+}
+
+const adminSkills = (req, res) => {
+  res.status(200).render('admin_skills')
 }
 
 const contactPage = (req, res) => {
@@ -42,7 +50,9 @@ module.exports = {
   homePage,
   contactPage,
   workPage,
-  adminPage
+  adminPage,
+  adminProfile,
+  adminSkills
 }
 
 

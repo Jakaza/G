@@ -454,6 +454,17 @@ main .details p{
     padding-bottom: 50px;
 }
 
+.fa-circle-play, .fa-circle-pause{
+    border-radius: 50%;
+        width: 25px;
+        cursor: pointer;
+        height: 25px;
+        color: rgb(59, 59, 59);
+        background: linear-gradient(90deg, rgba(94, 131, 224, 0.875) 0%, rgba(94,131,232, 0.875) 20%, rgba(94, 131, 232, 0.875) 20%);
+    
+}
+
+
 .title{
     text-align: center;
     padding-top: 50px;
@@ -733,7 +744,7 @@ main .details p{
     /* background-color: #4831d4; */
 }
 
-.mobile_project-details{
+.mobile_project-details, .mobile_project-links{
     display: none;
 }
 
@@ -802,6 +813,20 @@ main .details p{
     position: relative;
 }
 
+.project-links .dxFdrJ {
+    background: linear-gradient(134deg, rgb(106, 152, 240) 0%, rgb(73, 97, 220) 99%);
+    color: rgb(248, 248, 248);
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    margin: 0px;
+    margin-right: 8px;
+    padding: 12px;
+    border-radius: 5px;
+}
 
 
 .project__icon{
@@ -1076,6 +1101,7 @@ footer{
 
 .bio{
     padding: 8px 0;
+    background-color: red;
     color: var(--c-white-2);
 }
 

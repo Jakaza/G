@@ -2,3 +2,5 @@
 package-lock.json
 .env
 requests.http
+.replit
+replit.nix

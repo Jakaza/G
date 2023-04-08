@@ -1,8 +1,28 @@
-
+const aboutContentPara = document.querySelectorAll(".about__content-details > .about__content-para")
 const openBtn = document.querySelector("#open-btn")
 const closeBtn = document.querySelector("#close-btn")
 const sideMenu = document.querySelector("#sidebar")
 const closeLinks = document.querySelectorAll('.close')
+
+
+// readLouderButton.addEventListener('click', () => {
+//   readLouderButton.style.display = 'none';
+//   pauseButton.style.display = 'block';
+//   let utterance = new SpeechSynthesisUtterance('This is Themba speaking. ');
+//   speechSynthesis.speak(utterance);
+// })
+
+// pauseButton.addEventListener('click', () => {
+//   readLouderButton.style.display = 'block';
+//   pauseButton.style.display = 'none';
+//   speechSynthesis.pause()
+// })
+
+
+
+
+
+
 
 openBtn.addEventListener('click', function () {
 

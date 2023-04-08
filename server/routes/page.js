@@ -14,6 +14,9 @@ router.get('/work', pageController.workPage)
 // contact me
 router.get('/contact', pageController.contactPage)
 
+// Admin section
 router.get('/user/admin/jakaza@p1017.', pageController.adminPage);
+router.get('/user/admin/jakaza@p1017./profile', pageController.adminProfile);
+router.get('/user/admin/jakaza@p1017./skills', pageController.adminSkills);
 
 module.exports = router;
