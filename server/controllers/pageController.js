@@ -4,18 +4,28 @@ const SkillsProject = require('../model/SkillModel');
 
 
 const homePage = async (req, res) => {
-  //This data must come from database or cache
-  const doc_skills = await SkillsProject.find({})
-  const doc_minProjects = await MiniProject.find({})
-  const doc_rojects = await Project.find({})
+  let data = {}
+  try {
+    //This data must come from database or cache
+    const doc_skills = await SkillsProject.find({})
+    const doc_minProjects = await MiniProject.find({})
+    const doc_rojects = await Project.find({})
 
-  const data = {
-    title: 'Themba G Chauke | Undergraduate Computer Science Student.',
-    skills: doc_skills,
-    minProjects: doc_minProjects,
-    projects: doc_rojects
-  };
+    data = {
+      title: 'Themba G Chauke | Undergraduate Computer Science Student.',
+      skills: doc_skills,
+      minProjects: doc_minProjects,
+      projects: doc_rojects
+    };
 
+  } catch (error) {
+    data = {
+      title: 'Themba G Chauke | Undergraduate Computer Science Student.',
+      skills: [],
+      minProjects: [],
+      projects: []
+    };
+  }
   res.render('index', data)
 }
 

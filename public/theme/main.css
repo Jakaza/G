@@ -548,6 +548,7 @@ main .details p{
     font-size: 20px;
     letter-spacing: 1px;
     margin: 0;
+    text-transform: capitalize;
 }
 
 .about_me .btn--theme {
@@ -683,7 +684,7 @@ main .details p{
 /*=========================== MAIN PROJECTS ========================*/
 .project__container{
     width: 100%;
-    height: 500px;
+    height: auto;
     padding-top: 50px;
 }
 
@@ -716,7 +717,7 @@ main .details p{
 .project__con{
     display: flex;
     width: 100%;
-    height: 700px;
+    height: auto;
     /* background-color: #5e83e8; */
 }
 
@@ -885,7 +886,7 @@ main .details p{
     padding: 0px;
     margin: 50px 0px 0px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 25px;
     position: relative;
 }
@@ -910,6 +911,7 @@ main .details p{
     height: 60px;
     margin-right: 5px;
     /* overflow: hidden; */
+/*   background: black; */
 }
 
 .mini_title{
@@ -918,18 +920,44 @@ main .details p{
     height: 90px;
 }
 .mini_title h1{
-    font-family: 'Muti';
+    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     margin: 0;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--bg-blue-2);
 }
 
 .inner_mini{
-    height: 200px;
-    background-color: #0078d7;
+    padding: 20px 15px;
+    min-height: 180px;
+/*     background-color: #0078d7; */
+}
+.inner_mini p{
+    font-family:'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+/*     padding-top: 50px; */
 }
 
+
+.mini_project-links {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    padding: 0px;
+    list-style: none;
+}
+
+.mini_project-links li {
+    font-size: var(--fz-xs);
+    white-space: nowrap;
+    padding: 4px 8px;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Poppins' , sans-serif;
+    background-color: #6ba5f01a;
+}
 
 .project-inner {
     color: var(--bg-blue-5);
@@ -980,7 +1008,9 @@ main .details p{
     padding: 0 5px;
     border-radius: 5px;
 }
-
+.show_mobile{
+  display: none;
+}
 /*============================================================*/
 
 
@@ -1150,6 +1180,9 @@ footer{
 .github{
     background-color: #171515 !important;
 }
+.express{
+    background-color: #171515 !important;
+}
 .reactjs{
     background-color: #61DBFB !important;
 }
@@ -1174,7 +1207,7 @@ footer{
 .javascript{
     background-color: #f0db4f !important;
 }
-.mysql{
+.mySql{
     background-color: #00758F !important;
 }
 .bootstrap{
@@ -1183,5 +1216,39 @@ footer{
 .linux{
     background-color: #1793d1 !important;
 }
+
+.appwrite{
+    background-color: #f02e65!important;
+}
+
+.markdown{
+  background-color: #000000!important;
+}
+.redis{
+  background-color: #ff0000!important;
+}
+.react{
+  background-color: #1a90ff!important;
+}
+.socketio{
+  background-color: #000000!important;
+}
+.tomcat{
+  background-color: #ff7e05!important;
+}
+.vscode{
+  background-color: #1a90ff!important;
+}
+
+.oracle{
+  background-color: #ff0000!important;
+}
+.figma{
+  background-color: #ff8585!important;
+}
+.api{
+  background-color: #000000!important;
+}
+
 
 /*============================================================*/

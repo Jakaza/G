@@ -181,6 +181,19 @@
                             </div>
                             <% }); %>
 
+                                                      <div class="skills_skill api f-souce">
+                            <p>
+                              <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/256/external-api-web-development-flaticons-flat-flat-icons.png" width="35px" height="35px">
+
+                                API
+                            </p>
+                        </div>
+
+
+                              
+
+                              
+
 
 
                                 <!-- <div class="skills_skill java f-souce">
@@ -325,86 +338,64 @@
             </div>
             <div class="project__content">
 
+                <% projects.forEach(element=> { %>
+
                 <div class="project__con">
 
                     <div class="project-image">
                         <div class="image_opacity"></div>
-                        <img src="/images/testing_projects/template.png" width="100%" height="100%" alt="" srcset="">
+                        <img src="<%= element.imagelink%>" width="100%" height="100%" alt="Preview Image Banner" srcset="">
                     </div>
+      
                     <div class="project-details">
                         <div class="project_heading">
-                            <p class="project-overline ">Featured Project</p>
-                            <h3 class="project-title ">Project Title</h3>
+                            <p class="project-overline "><%= element.status%></p>
+                            <h3 class="project-title "><%= element.title%></h3>
                         </div>
 
                         <div class="project-description">
-                            <p>A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more.
-                                Available on
-                                Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
+                            <p style="text-shadow: white"><%= element.description%></p>
                         </div>
 
                         <ul class="project-tech-list">
-                            <li class="vscode"><i class="devicon-android-plain"></i>VS Code</li>
-                            <li class="nodejs"><i class="devicon-nodejs-plain"></i>NodeJs</li>
-                            <li class="html">
-                                <i class="devicon-html5-plain"></i>
-                                HTML
-                            </li>
-                            <li class="html">
-                                <i class="devicon-css3-plain"></i>
-                                CSS
-                            </li>
-                            <li class="mongodb">
-                                <i class="devicon-mongodb-plain"></i>
-                                MongoDB
-                            </li>
+                            
+                            <% element.languages.forEach(language=> { %>
+                              <li style="text-transform: capitalize;" class="<%=language.name%>"><i class="<%=language.icon %>"></i> <%= language.name%></li>
+                            <% }); %>
+                        
+                        
                         </ul>
 
                         <div class="project-links">
-                            <a target="__blank" href="//github-readme-stats.vercel.app/api/?username=anuraghazra"
+                            <a target="__blank" href="<%=element.preview %>"
                                 class="Button-sc-19s561s-0 dxFdrJ">Live Demo</a>
-                            <a target="__blank" href="//github-readme-stats.vercel.app/api/?username=anuraghazra"
-                                class="Button-sc-19s561s-0 dxFdrJ">Source</a>
                         </div>
                     </div>
 
                     <div class="mobile_project-details">
                         <div class="mobile_project_heading">
-                            <h1>Project Title</h1>
+                            <h1><%= element.title%></h1>
                         </div>
                         <div class="mobile_project-description">
-                            <p>A minimal, dark blue theme for VS Code.
+                            <p><%= element.description%></p>
                         </div>
 
                         <ul class="mobile_project-tech-list">
-                            <li class="vscode"><i class="devicon-android-plain"></i>VS Code</li>
-                            <li class="nodejs"><i class="devicon-nodejs-plain"></i>NodeJs</li>
-                            <li class="html">
-                                <i class="devicon-html5-plain"></i>
-                                HTML
-                            </li>
-                            <li class="html">
-                                <i class="devicon-css3-plain"></i>
-                                CSS
-                            </li>
-                            <li class="mongodb">
-                                <i class="devicon-mongodb-plain"></i>
-                                MongoDB
-                            </li>
+                            <% element.languages.forEach(language=> { %>
+                              <li style="text-transform: capitalize;" class="<%=language.name%>"><i class="<%=language.icon %>"></i> <%= language.name%></li>
+                            <% }); %>
                         </ul>
 
-
-
                     </div>
-
                     <div class="mobile_project-links">
-                        <a target="__blank" href="//github-readme-stats.vercel.app/api/?username=anuraghazra"
+                        <a target="__blank" href="<%=element.preview %>"
                             class="Button-sc-19s561s-0 dxFdrJ">Live Demo</a>
-                        <a target="__blank" href="//github-readme-stats.vercel.app/api/?username=anuraghazra"
-                            class="Button-sc-19s561s-0 dxFdrJ">Source</a>
                     </div>
 
                 </div>
+                      
+                <% }); %>
+
             </div>
         </div>
     </section>
@@ -426,20 +417,29 @@
                                     </div>
                                     <div class="mini_title">
                                         <h1>
-                                            <%= element.title %>
+                                            <%= element.title %> <a class="show_mobile" href><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
                                         </h1>
                                     </div>
                                 </div>
+                              <hr>
 
                                 <div class="inner_mini">
                                     <p>
-
+                                      <%= element.description %>
                                     </p>
+                                  <br>
+
+                        <ul class="mini_project-links">
+                            <li class="<%= element.languages %>">
+                                <i class="devicon-<%=element.languages%>-plain"></i>
+                                <%= element.languages %>
+                            </li>
+                        </ul>
                                 </div>
-                                <div class="project-links collapse" id="<%= element._id %>">
+                                <div class="project-links collapse mobile_mini-link" id="<%= element._id %>">
                                     <a target="__blank"
-                                        href="//github-readme-stats.vercel.app/api/?username=anuraghazra"
-                                        class="Button-sc-19s561s-0 dxFdrJ">Download</a>
+                                        href="<%= element.source %>"
+                                        class="Button-sc-19s561s-0 dxFdrJ">View Source Code</a>
 
                                 </div>
                             </div>
