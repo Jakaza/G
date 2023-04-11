@@ -409,7 +409,7 @@
             <div class="mini-project__content">
                 <ul class="projects-grid">
                     <% minProjects.forEach(element=> { %>
-                        <li data-toggle="collapse" href="#<%= element._id %>">
+                        <li class="mobile_remove_data-toggle" data-toggle="collapse" href="#<%= element._id %>">
                             <div class="mini_project">
                                 <div class="head_mini">
                                     <div class="mini_logo">
@@ -417,7 +417,8 @@
                                     </div>
                                     <div class="mini_title">
                                         <h1>
-                                            <%= element.title %> <a class="show_mobile" href><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                                            <%= element.title %> <a class="show_mobile" target="__blank"
+                                        href="<%= element.source %>"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
                                         </h1>
                                     </div>
                                 </div>
