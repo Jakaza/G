@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Themba G Chauke | Undergraduate Computer Science Student.</title>
+    <title>
+        <%= title%>
+    </title>
     <!-- Boostrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -16,47 +18,95 @@
     <!-- Devicon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
-    <link rel="stylesheet" href="public/theme/main.css">
+    <link rel="stylesheet" href="/theme/main.css">
+    <link rel="stylesheet" href="/theme/res_main.css">
 
-    <script>
-        (_ => {
-            const documentBody = document.getElementById('index_body')
-            const screenSize = window.innerWidth
-            if (screenSize < 839) {
-                location.href = "_index.html"
-            }
-        })()
-    </script>
+    <!-- Activate Links When Design  -->
+    <link rel="stylesheet" href="/public/theme/main.css">
+    <link rel="stylesheet" href="/public/theme/res_main.css">
+
+    <link rel="stylesheet" href="/fonts/muli/Muli.ttf">
 
 </head>
 
 <body id="index_body" class="">
 
-
-
     <header>
+        <div class="inner">
+            <nav>
+                <div class="logo">
+                    <!-- <img src="/images/logo.png" width="100%" height="100%" alt="" srcset=""> -->
+                    <a href="/"><img src="/images/logo.png" width="100%" height="100%" alt="" srcset=""></a>
+                </div>
+
+                <ul class="links">
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#contact_me">Contact</a></li>
+                </ul>
+
+                <div class="nav-bar">
+                    <span>
+                        <i id="open-btn" class="fa-solid fa-bars"></i>
+                        <i id="close-btn" class="fa-solid hide-btn fa-grip-lines"></i>
+                    </span>
+                </div>
+
+            </nav>
+
+        </div>
     </header>
+
+    <div class="side-menu" id="sidebar">
+        <nav>
+            <ul class="side-links">
+                <li><a class="close" href="/projects">My Work</a></li>
+                <li><a class="close" href="#about-me">About Me</a></li>
+                <li><a class="close" href="#service">Service</a></li>
+                <li><a class="close" href="#contact_me">Contact</a></li>
+            </ul>
+            <div class="social-media social-media-side-menu">
+                <ul style="display: flex;">
+                    <li><a href="https://linkedin.com/in/g-themba-chauke" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com/ThembaG3"><i class="fa-brands fa-twitter-square"></i></a></li>
+                    <li><a href="https://www.facebook.com/malume.jakaza"><i
+                                class="fa-brands fa-facebook-square"></i></a></li>
+                    <!-- <li><a href=""><i class="fa-brands fa-instagram-square"></i></a></li> -->
+                </ul>
+            </div>
+        </nav>
+    </div>
+
     <main>
         <div class="inner">
             <section class="user-details">
                 <div class="details">
                     <div class="underline"></div>
-                    <h1>Hello, I'm Themba </h1>
+                    <!-- <h1>Hello, I'm Themba </h1> -->
+                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Themba</h1>
                     <h4>Software Engineer</h4>
-                    <p>As a dedicated software engineer, I am passionate about creating high quality software solutions
+                    <p>As a dedicated software engineer, I am passionate about creating high quality software
+                        solutions
                         that meet the needs of the users. </p>
                     <p>I have a deep understanding of programming languages, framework and software development
-                        methodologies, and I am always eager to learn new technologies and tools. I enjoy collaborating
+                        methodologies, and I am always eager to learn new technologies and tools. I enjoy
+                        collaborating
                         with other engineers and working in a team.</p>
-                    <a href="#contact_from" class="btn hero-btn">hire me</a>
+                    <a href="#contact_me" class="btn hero-btn">Download CV</a>
+       
 
                     <div class="social-media mt-4">
                         <ul>
                             <li><a href="https://linkedin.com/in/g-themba-chauke" target="_blank"><i
                                         class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="https://twitter.com/ThembaG3" target="_blank"><i
-                                        class="fa-brands fa-twitter-square"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-instagram-square"></i></a></li>
+                            <li><a href="https://twitter.com/ThembaG3"><i class="fa-brands fa-twitter-square"></i></a>
+                            </li>
+                            <li><a href="https://www.facebook.com/malume.jakaza"><i
+                                        class="fa-brands fa-facebook-square"></i></a></li>
+                            <!-- <li><a href=""><i class="fa-brands fa-instagram-square"></i></a></li> -->
                         </ul>
                     </div>
                     <p class="f-souce">CONNECT WITH ME</p>
@@ -74,11 +124,15 @@
     </main>
 
 
-    <section class="about_me">
+    <section class="about_me" id="about-me">
         <div class="inner">
-            <div class="title">
-                <h1 class="heading-sec__main">About Me</h1>
+
+            <div class="position-relative d-flex align-items-center justify-content-center ">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+                <h1 class="position-absolute text-uppercase text-primary title-h">About Me</h1>
             </div>
+            
+
             <div class="sub-heading">
                 <p>Here you will find more information about me, what I do, and my current skills mostly in terms of
                     programming and technology</p>
@@ -87,37 +141,68 @@
             <div class="about__content">
 
                 <section class="about__content-main">
-                    <h3 class="about__content-title">Get to know me!</h3>
+                    <h3 class="about__content-title">Get to know me!
+                    </h3>
 
                     <div class="about__content-details">
                         <p class="about__content-para">
-                            I'm a <strong>Frontend Web Developer</strong> building the
-                            Front-end of Websites and Web Applications that leads to the
-                            success of the overall product. Check out some of my work in the
-                            <strong>Projects</strong> section.
-                        </p>
-                        <p class="about__content-para"> I also like sharing content related to the stuff that I have
-                            learned over the years in <strong>Web Development</strong> so it
-                            can help other people of the Dev Community. Feel free to Connect
-                            or Follow me on my
-                            <a rel="noreferrer" href="https://linkedin.com/in/rammcodes" target="_blank">Linkedin</a>
-                            where I post useful content related to Web Development and
-                            Programming
+                            As a computer science student, I have developed a strong foundation in various
+                            programming
+                            languages such as Java, Javascript, and NodeJS,
+                            as well as a solid understanding of algorithms and data structures.
+                            Through my coursework and personal projects,
+                            I have gained experience in software development, database management, and web
+                            development.
+                            I am passionate about utilizing my skills to create innovative solutions to real-world
+                            problems.
                         </p>
                         <p class="about__content-para">
+                            In addition to my technical expertise, I have also developed strong problem-solving and
+                            analytical skills.
+                            I am comfortable working both independently and as part of a team,
+                            and I enjoy collaborating with others to find creative solutions to complex problems.
+                            I am also a quick learner and am always eager to expand my knowledge and skillset.
+                        </p>
+                        <p class="about__content-para">
+                            Overall, as a computer science student, I am excited to apply my knowledge and skills to
+                            make a positive impact in the world of technology.
                             I'm open to <strong>Job</strong> opportunities where I can
                             contribute, learn and grow. If you have a good opportunity that
-                            matches my skills and experience then don't hesitate to
-                            <strong>contact</strong> me.
+                            matches my skills then don't hesitate to
+                            <a href="#mail_form"> <strong>contact me.</strong> </a>
+
                         </p>
+
                     </div>
-
-
                 </section>
                 <section class="about__content-skills">
                     <h3 class="about__content-title">My Skills</h3>
                     <div class="about_skills-box">
-                        <div class="skills_skill java f-souce">
+
+                        <!-- <% skills.forEach(element=> { %>
+                            <div class="skills_skill <%= element.name %> f-souce">
+                                <p> <i class="<%=element.icon  %>"></i>
+                                    <%= element.name %>
+                                </p>
+                            </div>
+                            <% }); %>
+
+                                                      <div class="skills_skill api f-souce">
+                            <p>
+                              <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/256/external-api-web-development-flaticons-flat-flat-icons.png" width="35px" height="35px">
+
+                                API
+                            </p>
+                        </div> -->
+
+
+                              
+
+                              
+
+
+
+                                <!-- <div class="skills_skill java f-souce">
                             <p> <i class="devicon-java-plain"></i> Java</p>
                         </div>
                         <div class="skills_skill android f-souce">
@@ -128,14 +213,15 @@
                         </div>
                         <div class="skills_skill javascript f-souce">
                             <p>
-                                <i class="devicon-javascript-plain"></i>
-                                Javascript
+                                <i class="devicon-nodejs-plain"></i>
+                                Node Js
                             </p>
+
                         </div>
                         <div class="skills_skill nodejs f-souce">
                             <p>
-                                <i class="devicon-nodejs-plain"></i>
-                                Node Js
+                                <i class="devicon-javascript-plain"></i>
+                                Javascript
                             </p>
                         </div>
                         <div class="skills_skill mysql f-souce">
@@ -173,73 +259,129 @@
                                 <i class="devicon-firebase-plain"></i>
                                 MongoDB & Firebase
                             </p>
-                        </div>
+                        </div> -->
+
+
+                        
+
                     </div>
 
                 </section>
             </div>
-            <a href="#contact_from" class="btn btn--med btn--theme dynamicBgClr">Contact Me</a>
+            <a href="#mail_form" id="about-btn" class="btn btn--med btn--theme dynamicBgClr">Contact Me</a>
         </div>
     </section>
 
-    <section class="service__container">
+
+    <section class="service__container" id="service">
         <div class="inner">
-            <div class="title">
+            <!-- <div class="title">
                 <h1 class="heading-sec__main">Services</h1>
+            </div> -->
+
+            <div class="position-relative d-flex align-items-center justify-content-center ">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Majors</h1>
+                <h1 class="position-absolute text-uppercase text-primary title-h">Majors</h1>
             </div>
 
-            <div class="service__content">
 
+
+            <div class="row">
+                <div class="col-sm-3 col-xs-6">
+                    <div class="feature-about">
+                        <div class="medium-rectangle rectangle">
+                            <i class="fa fa-laptop" aria-hidden="true"></i>
+                        </div><!-- /.rectangle -->
+                        <h3>Software Development </h3>
+                        <p>Our approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use and simplicity for your audience</p>
+                    </div><!-- /.feature-about -->
+                </div>                    
+                <div class="col-sm-3 col-xs-6">
+                    <div class="feature-about">
+                        <div class="medium-rectangle rectangle">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </div><!-- /.rectangle -->
+                        <h3>Mobile Development</h3>
+                        <p>The web development process involves taking the graphical elements defined in the design process and coding them into a custom theme.</p>
+                    </div><!-- /.feature-about -->
+                </div>                    
+                <div class="col-sm-3 col-xs-6">
+                    <div class="feature-about">
+                        <div class="medium-rectangle rectangle">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div><!-- /.rectangle -->
+                        <h3>Software Testing</h3>
+                        <p>Go farther than you thought you could. With us you can go farther then ever before. Be in top results of searches.</p>
+                    </div><!-- /.feature-about -->
+                </div>                    
+                <div class="col-sm-3 col-xs-6">
+                    <div class="feature-about">
+                        <div class="medium-rectangle rectangle">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </div><!-- /.rectangle -->
+                        <h3>Database Development</h3>
+                        <p>It's important to keep your brand consistent and recognizable across all platforms</p>
+                    </div><!-- /.feature-about -->
+                </div>
+            </div>
+
+
+            <!-- <div class="service__content">
                 <div class="service_main_container">
                     <section class="service_sidebar">
                         <ul>
-                            <li class="service_side-btn web">Web Dev</li>
-                            <li class="service_side-btn mobile active">Mobile</li>
+                            <li class="service_side-btn active web">Web Dev</li>
+                            <li class="service_side-btn mobile ">Mobile</li>
                             <li class="service_side-btn mentor">Mentorship</li>
                             <li class="service_side-btn">Technical writing</li>
                             <li class="service_side-btn">Freelance</li>
                         </ul>
                     </section>
                     <section class="service_details">
-                        <div class="web infor hide">
+                        <div class="web infor">
                             <h4>Web Development</h4>
                             <small>
                                 <p class="status av">Available</p>
                             </small>
                             <p><i class="fa-solid fa-hand-point-right"></i> <b>Website Design:</b> i create visually
                                 appealing and user-friendly websites that align with my clients' brand and business
-                                goals. This include designing the layout, color scheme, typography, and user interface.
+                                goals. This include designing the layout, color scheme, typography, and user
+                                interface.
                             </p>
                             <p><i class="fa-solid fa-hand-point-right"></i> <b>Website Maintenance:</b> I provide
                                 ongoing website maintenance services to ensure that my clients' websites remain
-                                up-to-date, secure, and functioning smoothly.</p> <a href="">Read More</a>
+                                up-to-date, secure, and functioning smoothly.</p>
                         </div>
                         <div class="mobile infor  hide">
                             <h4>Mobile Development</h4>
                             <small>
-                                <p class="status av">Available</p>
+                                <p class="status not-av">Not Available</p>
                             </small>
                             <p><i class="fa-solid fa-hand-point-right"></i><b>Designing and developing mobile
-                                    applications:</b> I use my programming skills and knowledge of various mobile app
-                                development platforms (such as Android) to create custom mobile applications my clients.
-                            </p><a href="">Read More</a>
+                                    applications:</b> I use my programming skills and knowledge of various mobile
+                                app
+                                development platforms (such as Android) to create custom mobile applications my
+                                clients.
+                            </p>
                         </div>
 
-                        <div class="mentor infor">
+                        <div class="mentor infor hide">
                             <h4>Mentorship</h4>
                             <small>
-                                <p class="status  av">Available</p>
+                                <p class="status  not-av">Not Available</p>
                             </small>
                             <p><i class="fa-solid fa-hand-point-right"></i><b>One-on-one mentoring:</b> I provide
-                                one-on-one mentoring to clients, answering their questions and providing guidance and
+                                one-on-one mentoring to clients, answering their questions and providing guidance
+                                and
                                 feedback as they work through the training materials.</p>
                             <p><i class="fa-solid fa-hand-point-right"></i><b>Facilitating group learning:</b> I
-                                facilitate group learning sessions, where students work together to solve problems and
-                                share their experiences.</p><a href="">Read More</a>
+                                facilitate group learning sessions, where students work together to solve problems
+                                and
+                                share their experiences.</p>
                         </div>
                     </section>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </section>
@@ -247,108 +389,166 @@
 
     <section class="project__container">
         <div class="inner">
-            <div class="side-title">
-                <h1 class="sub_heading-sec">Some Things I’ve Built</h1>
+
+            <div class="position-relative d-flex align-items-center justify-content-center ">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
+                <h1 class="position-absolute text-uppercase text-primary title-h">Projects</h1>
             </div>
-            <div class="project__content">
+            <div class="side-title">
+                <h1 class="sub_heading-sec">School Project</h1>
+            </div>
+            <!-- <div class="project__content">
+
+                <% projects.forEach(element=> { %>
 
                 <div class="project__con">
 
                     <div class="project-image">
                         <div class="image_opacity"></div>
-                        <img src="/images/testing_projects/template.png" width="100%" height="100%" alt="" srcset="">
+                        <img src="<%= element.imagelink%>" width="100%" height="100%" alt="Preview Image Banner" srcset="">
                     </div>
+      
                     <div class="project-details">
                         <div class="project_heading">
-                            <p class="project-overline ">Featured Project</p>
-                            <h3 class="project-title ">Project Title</h3>
+                            <p class="project-overline "><%= element.status%></p>
+                            <h3 class="project-title "><%= element.title%></h3>
                         </div>
 
                         <div class="project-description">
-                            <p>A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on
-                                Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
+                            <p style="text-shadow: white"><%= element.description%></p>
                         </div>
 
                         <ul class="project-tech-list">
-                            <li class="vscode"><i class="devicon-android-plain"></i>VS Code</li>
-                            <li class="nodejs"><i class="devicon-nodejs-plain"></i>NodeJs</li>
-                            <li class="html">
-                                <i class="devicon-html5-plain"></i>
-                                HTML
-                            </li>
-                            <li class="html">
-                                <i class="devicon-css3-plain"></i>
-                                CSS
-                            </li>
-                            <li class="mongodb">
-                                <i class="devicon-mongodb-plain"></i>
-                                MongoDB
-                            </li>
+                            
+                            <% element.languages.forEach(language=> { %>
+                              <li style="text-transform: capitalize;" class="<%=language.name%>"><i class="<%=language.icon %>"></i> <%= language.name%></li>
+                            <% }); %>
+                        
+                        
                         </ul>
 
                         <div class="project-links">
-                            <li><a href=""><i class="fa-brands project__icon fa-square-github">
-
-                                    </i></a>
-
-                            </li>
-                            <li><a href=""><i
-                                        class="fa-solid project__icon s__icon  fa-arrow-up-right-from-square"></i></a>
-                            </li>
+                            <a target="__blank" href="<%=element.preview %>"
+                                class="Button-sc-19s561s-0 dxFdrJ">Live Demo</a>
                         </div>
                     </div>
+
+                    <div class="mobile_project-details">
+                        <div class="mobile_project_heading">
+                            <h1><%= element.title%></h1>
+                        </div>
+                        <div class="mobile_project-description">
+                            <p><%= element.description%></p>
+                        </div>
+
+                        <ul class="mobile_project-tech-list">
+                            <% element.languages.forEach(language=> { %>
+                              <li style="text-transform: capitalize;" class="<%=language.name%>"><i class="<%=language.icon %>"></i> <%= language.name%></li>
+                            <% }); %>
+                        </ul>
+
+                    </div>
+                    <div class="mobile_project-links">
+                        <a target="__blank" href="<%=element.preview %>"
+                            class="Button-sc-19s561s-0 dxFdrJ">Live Demo</a>
+                    </div>
+
                 </div>
-            </div>
+                      
+                <% }); %>
+
+            </div> -->
         </div>
     </section>
-
-
 
     <section class="mini-project__container">
         <div class="inner">
             <div class="side-title">
-                <h3 class="" style="font-size: 24px; text-align: center; padding-top: 100px;">Selected mini projects I've worked on in the past.</h3>
+                <h3 class="" style="font-size: 24px; text-align: center; padding-top: 100px;">Selected mini projects
+                    I've worked on in the past.</h3>
             </div>
-            <div class="mini-project__content">
-                <ul class="projects-grid">
-                    <li>
-                        <a href="/" class="project-inner">
-                            <div class="min-name">
-                                <h2>Google Clone</h2>
-                            </div>
-                            <div class="min-content">
-                                <p>Google Clone, search webpages around the globe
-                                    Google Clone, search webpages around the globe
-                                    Google Clone, search webpages around the globe
-                                    Google Clone, search webpages around the globe
-                                </p>
-                            </div>
-                            <div class="min-languages">
-                                <ul class="min-languages_flex">
-                                    <li class="javascript">Javascript</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <div class="project-inner"></div>
-                    </li>
-                    <li>
-                        <div class="project-inner"></div>
-                    </li>
-                    <li>
-                        <div class="project-inner"></div>
-                    </li>
-                    <li>
-                        <div class="project-inner"></div>
-                    </li>
 
-                </ul>
-            </div>
+            <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
+                <button class="btn btn-theme-outline selected" data-filter="*">All</button>
+                <button class="btn btn-theme-outline" data-filter=".apps">Apps</button>
+                <button class="btn btn-theme-outline" data-filter=".template">API</button>
+                <button class="btn btn-theme-outline" data-filter=".ios">WEB</button>
+                <button class="btn btn-theme-outline" data-filter=".ui-ux">UI/UX</button>
+              </div>
+
+
+    
+
+             <div class="mini-project__content">
+             <div class="gridder my-3">
+                    <div class="grid-item apps wow zoomIn">
+                      <div class="img-place" data-src="../assets/img/work/work-1.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Mobile Travel App</h5> <p>Travel, Discovery</p>">
+                        <img src="../assets/img/work/work-1.jpg" alt="">
+                        <div class="img-caption">
+                          <h5 class="fg-theme">Mobile Travel App</h5>
+                          <p>Travel, Discovery</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item template wireframes wow zoomIn">
+                      <div class="img-place" data-src="../assets/img/work/work-2.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Music App</h5> <p>Musics</p>">
+                        <img src="../assets/img/work/work-2.jpg" alt="">
+                        <div class="img-caption">
+                          <h5 class="fg-theme">Music App</h5>
+                          <p>Musics</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item apps ios wow zoomIn">
+                      <div class="img-place" data-src="../assets/img/work/work-3.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Gaming Dashboard</h5> <p>Games, Streaming</p>">
+                        <img src="../assets/img/work/work-3.jpg" alt="">
+                        <div class="img-caption">
+                          <h5 class="fg-theme">Gaming Dashboard</h5>
+                          <p>Games, Streaming</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item graphic ui-ux wow zoomIn">
+                      <div class="img-place" data-src="../assets/img/work/work-4.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Drugs Delivery App</h5> <p>Health, Drugs</p>">
+                        <img src="../assets/img/work/work-4.jpg" alt="">
+                        <div class="img-caption">
+                          <h5 class="fg-theme">Drugs Delivery App</h5>
+                          <p>Health, Drugs</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item apps ios wow zoomIn">
+                      <div class="img-place" data-src="../assets/img/work/work-5.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Musics Discover</h5> <p>Musics, Dashboard</p>">
+                        <img src="../assets/img/work/work-5.jpg" alt="">
+                        <div class="img-caption">
+                          <h5 class="fg-theme">Musics Discover</h5>
+                          <p>Musics, Dashboard</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item graphic ui-ux wireframes wow zoomIn">
+                      <div class="img-place" data-src="../assets/img/work/work-6.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Game Streaming</h5> <p>Games, Streaming</p>">
+                        <img src="../assets/img/work/work-6.jpg" alt="">
+                        <div class="img-caption">
+                          <h5 class="fg-theme">Game Streaming</h5>
+                          <p>Games, Streaming</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>  
+
+                  <!-- End gridder -->
+                  <div class="text-center">
+                    <a href="javascript:void(0)" class="btn-load-more btn-theme">Load More</a>
+                  </div>
+            </div> 
         </div>
     </section>
 
-    <div class="contact_me-conatiner">
+
+
+
+    <div class="contact_me-conatiner" id="contact_me">
         <div class="inner">
             <div class="title">
                 <h1 class="heading-sec__main">Get In Touch</h1>
@@ -361,16 +561,16 @@
             <div class="contact__me_form">
 
 
-                <form action="" class="contact__me" id="contact_from">
+                <form id="mail_form" method="post" class="contact__me">
                     <div class="row">
                         <div class="col">
                             <label for="exampleFormControlTextarea1" class="form-label">Name</label>
-                            <input type="text" class="form-control" required placeholder="Enter Your Name"
+                            <input type="text" name="username" class="form-control" placeholder="Enter Your Name"
                                 aria-label="First name">
                         </div>
                         <div class="col">
                             <label for="exampleFormControlTextarea1" class="form-label">Email</label>
-                            <input type="text" class="form-control" required placeholder="Enter Your Email"
+                            <input type="text" name="email" class="form-control" placeholder="Enter Your Email"
                                 aria-label="Last name">
                         </div>
                     </div>
@@ -379,19 +579,26 @@
                         <div class="col">
                             <label for="exampleFormControlTextarea1" class="form-label">Subject
                             </label>
-                            <input type="text" class="form-control" required placeholder="Enter Subject"
+                            <input type="text" name="subject" class="form-control" placeholder="Enter Subject"
                                 aria-label="Subject">
                         </div>
                     </div>
                     <br>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter Your Message"
-                            required rows="5"></textarea>
+                        <textarea class="form-control" name="message" id="exampleFormControlTextarea1"
+                            placeholder="Enter Your Message" rows="5"></textarea>
+                    </div>
+
+                    <div class="col-12" id="feedback_section">
+
                     </div>
 
                     <div class="col-12">
-                        <button class="btn btn-success" type="submit">Send Message</button>
+                        <button class=" btn btn-success spin-button" type="submit">
+                            Send Message
+                        </button>
+
                     </div>
                 </form>
 
@@ -403,34 +610,35 @@
         <div class="inner">
 
             <div class="main-footer__upper">
-                <section>
-                    <div class="profile">
-                        <div class="profile_icon">
 
-                        </div>
-                        <div class="name">
-                            <h3><span class="txt-rotate" data-period="2000"
-                                    data-rotate='[ "I hope you enjoyed visiting my website.", "Come back again", "fun!" ]'></span>
-                            </h3>
-                        </div>
-                        <div class="bio">
-                            <p>Living, learning, & leveling up one day at a time.</p>
-                        </div>
-                    </div>
-                </section>
 
             </div>
 
             <div class="main-footer__lower">
                 © Copyright
                 <script>document.write(new Date().getFullYear())</script>. Made by
-                <a rel="noreferrer" target="_blank" href="/">Themba G Chauke</a>
+                <a class="developer" rel="noreferrer" target="_blank" href="/">Themba G Chauke</a>
             </div>
         </div>
     </footer>
 
     <script src="/scripts/anim.js"></script>
-    <script src="public/scripts/controller.js"></script>
+    <script src="/scripts/controller.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- For Design  -->
+    <script src="/public/scripts/anim.js"></script> 
+    <script src="/scripts/controller.js"></script>
 
 </body>
 
