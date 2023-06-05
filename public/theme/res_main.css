@@ -39,6 +39,9 @@
         background-color: var(--bg-blue-5);
     }
 
+    .m-hide{
+        display: none;
+    }
 
 
     /*
@@ -133,7 +136,7 @@
           );
     }
 
-    header{
+    header, .hero{
         background: linear-gradient(
             to bottom,
             var(--bg-black-2) 0%,
@@ -234,6 +237,43 @@
     #about-btn{
         display: none;
     }
+
+
+        /*
+        PROJECT DETAILS SEC
+    */
+
+    .project__content {
+        padding-top: 0px;
+        flex-direction: column;
+    }
+
+    .project__content-image{
+        width: 100%;
+        order: 1;
+    }
+
+    .project__content-main{
+        width: 100%;
+        order: 2;
+    }
+
+    .project__content-para{
+        padding-right: 0;
+    }
+
+    .project .title{
+        padding-top: 25px;
+    }
+
+    .project .sub-heading p{
+        padding: 15px;
+    }
+
+    .project__content-main{
+        padding-top: 25px;
+    }
+
 
     /*
         SERVICE SEC

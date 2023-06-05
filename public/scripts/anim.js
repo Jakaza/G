@@ -24,6 +24,22 @@ if (window.innerWidth < 750) {
 // })
 
 
+  /**
+   * Back to top button
+   */
+
+let backtotop = select('.back-to-top')
+if (backtotop) {
+  const toggleBacktotop = () => {
+    if (window.scrollY > 100) {
+      backtotop.classList.add('showScroll')
+    } else {
+      backtotop.classList.remove('showScroll')
+    }
+  }
+  window.addEventListener('load', toggleBacktotop)
+  onscroll(document, toggleBacktotop)
+}
 
 
 
