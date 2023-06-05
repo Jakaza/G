@@ -25,7 +25,6 @@
     <!-- <link rel="stylesheet" href="/public/theme/main.css">
     <link rel="stylesheet" href="/public/theme/res_main.css"> -->
 
-    <link rel="stylesheet" href="/fonts/muli/Muli.ttf">
 
 </head>
 
@@ -84,7 +83,9 @@
             <section class="user-details">
                 <div class="details">
                     <div class="underline"></div>
-                    <h1>Hello, I'm Themba </h1>
+                    <!-- <h1>Hello, I'm Themba </h1> -->
+                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Themba</h1>
                     <h4>Software Engineer</h4>
                     <p>As a dedicated software engineer, I am passionate about creating high quality software
                         solutions
@@ -93,7 +94,8 @@
                         methodologies, and I am always eager to learn new technologies and tools. I enjoy
                         collaborating
                         with other engineers and working in a team.</p>
-                    <a href="#contact_me" class="btn hero-btn">hire me</a>
+                    <a href="#contact_me" class="btn hero-btn">Download CV</a>
+       
 
                     <div class="social-media mt-4">
                         <ul>
@@ -123,10 +125,13 @@
 
     <section class="about_me" id="about-me">
         <div class="inner">
-            <div class="title">
-                <h1 class="heading-sec__main">About Me
-                </h1>
+
+            <div class="position-relative d-flex align-items-center justify-content-center ">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+                <h1 class="position-absolute text-uppercase text-primary title-h">About Me</h1>
             </div>
+            
+
             <div class="sub-heading">
                 <p>Here you will find more information about me, what I do, and my current skills mostly in terms of
                     programming and technology</p>
@@ -173,7 +178,7 @@
                     <h3 class="about__content-title">My Skills</h3>
                     <div class="about_skills-box">
 
-                        <% skills.forEach(element=> { %>
+                        <!-- <% skills.forEach(element=> { %>
                             <div class="skills_skill <%= element.name %> f-souce">
                                 <p> <i class="<%=element.icon  %>"></i>
                                     <%= element.name %>
@@ -187,7 +192,7 @@
 
                                 API
                             </p>
-                        </div>
+                        </div> -->
 
 
                               
@@ -254,6 +259,64 @@
                                 MongoDB & Firebase
                             </p>
                         </div> -->
+
+<!-- 
+                        <div class="skill-container">
+                            <div class="skill-box">
+                                <span class="name">Java</span>
+                                <div class="skill-bar">
+                                    <span class="skill-per java">
+                                        <span class="tooltip">90%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <span class="name">HTML/CSS</span>
+                                <div class="skill-bar">
+                                    <span class="skill-per html">
+                                        <span class="tooltip">60%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <span class="name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <span class="skill-per javascript">
+                                        <span class="tooltip">50%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <span class="name">NodeJS</span>
+                                <div class="skill-bar">
+                                    <span class="skill-per nodejs">
+                                        <span class="tooltip">30%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div> -->
+
+
+                        <div class="skill-mf">
+                            <span>HTML</span> <span class="pull-right text-muted">85%</span>
+                            <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span>CSS3</span> <span class="pull-right text-muted">75%</span>
+                            <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span>PHP</span> <span class="pull-right text-muted">50%</span>
+                            <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span>JAVASCRIPT</span> <span class="pull-right text-muted">90%</span>
+                            <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        
+
                     </div>
 
                 </section>
@@ -265,12 +328,59 @@
 
     <section class="service__container" id="service">
         <div class="inner">
-            <div class="title">
+            <!-- <div class="title">
                 <h1 class="heading-sec__main">Services</h1>
+            </div> -->
+
+            <div class="position-relative d-flex align-items-center justify-content-center ">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Majors</h1>
+                <h1 class="position-absolute text-uppercase text-primary title-h">Majors</h1>
             </div>
 
-            <div class="service__content">
 
+
+            <div class="row">
+                <div class="col-sm-3 col-xs-6">
+                    <div class="feature-about">
+                        <div class="medium-rectangle rectangle">
+                            <i class="fa fa-laptop" aria-hidden="true"></i>
+                        </div><!-- /.rectangle -->
+                        <h3>Software Development </h3>
+                        <p>
+                            I am highly motivated to work within the field of Software Development, leveraging my expertise in programming languages and passion for creating innovative solutions.</p>
+                    </div><!-- /.feature-about -->
+                </div>                    
+                <div class="col-sm-3 col-xs-6">
+                    <div class="feature-about">
+                        <div class="medium-rectangle rectangle">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div><!-- /.rectangle -->
+                        <h3>Mobile Development</h3>
+                        <p>Passionate about Mobile Development, I excel in Android platforms, utilizing languages like java to create user-centric mobile applications that deliver seamless experiences.</p>
+                    </div><!-- /.feature-about -->
+                </div>                    
+                <div class="col-sm-3 col-xs-6">
+                    <div class="feature-about">
+                        <div class="medium-rectangle rectangle">
+                            <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                        </div><!-- /.rectangle -->
+                        <h3>Software Testing</h3>
+                        <p>I am willing to specialize in Software Testing. I am dedicated to identifying defects, validating functionality, and enhancing the overall reliability of software applications.</p>
+                    </div><!-- /.feature-about -->
+                </div>                    
+                <div class="col-sm-3 col-xs-6">
+                    <div class="feature-about">
+                        <div class="medium-rectangle rectangle">
+                            <i class="fa-solid fa-database"></i>
+                        </div><!-- /.rectangle -->
+                        <h3>Database Development</h3>
+                        <p>Building upon the skills acquired during my time in academia, I am eager to pursue a specialization in Database Development.Leveraging my expertise in database design and query optimization.</p>
+                    </div><!-- /.feature-about -->
+                </div>
+            </div>
+
+
+            <!-- <div class="service__content">
                 <div class="service_main_container">
                     <section class="service_sidebar">
                         <ul>
@@ -325,7 +435,7 @@
                         </div>
                     </section>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </section>
@@ -333,10 +443,15 @@
 
     <section class="project__container">
         <div class="inner">
-            <div class="side-title">
-                <h1 class="sub_heading-sec">Some Things I’ve Built</h1>
+
+            <div class="position-relative d-flex align-items-center justify-content-center ">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
+                <h1 class="position-absolute text-uppercase text-primary title-h">Projects</h1>
             </div>
-            <div class="project__content">
+            <!-- <div class="side-title">
+                <h1 class="sub_heading-sec">School Project</h1>
+            </div> -->
+            <!-- <div class="project__content">
 
                 <% projects.forEach(element=> { %>
 
@@ -396,7 +511,7 @@
                       
                 <% }); %>
 
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -406,119 +521,81 @@
                 <h3 class="" style="font-size: 24px; text-align: center; padding-top: 100px;">Selected mini projects
                     I've worked on in the past.</h3>
             </div>
-            <div class="mini-project__content">
-                <ul class="projects-grid">
-                    <% minProjects.forEach(element=> { %>
-                        <li class="mobile_remove_data-toggle" data-toggle="collapse" href="#<%= element._id %>">
-                            <div class="mini_project">
-                                <div class="head_mini">
-                                    <div class="mini_logo">
-                                        <img src="<%= element.icon %>" width="100%" height="100%" alt="" srcset="">
-                                    </div>
-                                    <div class="mini_title">
-                                        <h1>
-                                            <%= element.title %> <a class="show_mobile" target="__blank"
-                                        href="<%= element.source %>"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-                                        </h1>
-                                    </div>
-                                </div>
-                              <hr>
 
-                                <div class="inner_mini">
-                                    <p>
-                                      <%= element.description %>
-                                    </p>
-                                  <br>
-
-                        <ul class="mini_project-links">
-                            <li class="<%= element.languages %>">
-                                <i class="devicon-<%=element.languages%>-plain"></i>
-                                <%= element.languages %>
-                            </li>
-                        </ul>
-                                </div>
-                                <div class="project-links collapse mobile_mini-link" id="<%= element._id %>">
-                                    <a target="__blank"
-                                        href="<%= element.source %>"
-                                        class="Button-sc-19s561s-0 dxFdrJ">View Source Code</a>
-
-                                </div>
-                            </div>
-                        </li>
-                        <% }); %>
+            <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
+                <button class="btn btn-theme-outline selected" data-filter="*">All</button>
+                <button class="btn btn-theme-outline" data-filter=".apps">Apps</button>
+                <button class="btn btn-theme-outline" data-filter=".template">API</button>
+                <button class="btn btn-theme-outline" data-filter=".ios">WEB</button>
+                <button class="btn btn-theme-outline" data-filter=".ui-ux">UI/UX</button>
+              </div>
 
 
+    
 
-                            <!-- <li>
-                        <div class="mini_project">
-                            <div class="head_mini">
-                                <div class="mini_logo">
-                                    <img src="/images/logo.png" width="100%" height="100%" alt="" srcset="">
-                                </div>
-                                <div class="mini_title">
-                                    <h1>IP Finder</h1>
-                                </div>
-                            </div>
-
-                            <div class="inner_mini">
-
-                            </div>
+             <div class="mini-project__content">
+             <div class="gridder my-3">
+                    <div class="grid-item apps wow zoomIn">
+                      <div class="img-place" data-src="../assets/img/work/work-1.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Mobile Travel App</h5> <p>Travel, Discovery</p>">
+                        <img src="../assets/img/work/work-1.jpg" alt="">
+                        <div class="img-caption">
+                          <h5 class="fg-theme">Mobile Travel App</h5>
+                          <p>Travel, Discovery</p>
                         </div>
-                    </li>
-                    <li>
-                        <div class="mini_project">
-                            <div class="head_mini">
-                                <div class="mini_logo">
-                                    <img src="/images/logo.png" width="100%" height="100%" alt="" srcset="">
-                                </div>
-                                <div class="mini_title">
-                                    <h1>Connector -J</h1>
-                                </div>
-                            </div>
-
-                            <div class="inner_mini">
-
-                            </div>
+                      </div>
+                    </div>
+                    <div class="grid-item template wireframes wow zoomIn">
+                      <div class="img-place" data-src="../assets/img/work/work-2.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Music App</h5> <p>Musics</p>">
+                        <img src="../assets/img/work/work-2.jpg" alt="">
+                        <div class="img-caption">
+                          <h5 class="fg-theme">Music App</h5>
+                          <p>Musics</p>
                         </div>
-                    </li>
-                    <li>
-                        <div class="mini_project">
-                            <div class="head_mini">
-                                <div class="mini_logo">
-                                    <img src="/images/logo.png" width="100%" height="100%" alt="" srcset="">
-                                </div>
-                                <div class="mini_title">
-                                    <h1>Connector -J</h1>
-                                </div>
-                            </div>
-
-                            <div class="inner_mini">
-
-                            </div>
+                      </div>
+                    </div>
+                    <div class="grid-item apps ios wow zoomIn">
+                      <div class="img-place" data-src="../assets/img/work/work-3.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Gaming Dashboard</h5> <p>Games, Streaming</p>">
+                        <img src="../assets/img/work/work-3.jpg" alt="">
+                        <div class="img-caption">
+                          <h5 class="fg-theme">Gaming Dashboard</h5>
+                          <p>Games, Streaming</p>
                         </div>
-                    </li>
-                    <li>
-                        <div class="mini_project">
-                            <div class="head_mini">
-                                <div class="mini_logo">
-                                    <img src="/images/logo.png" width="100%" height="100%" alt="" srcset="">
-                                </div>
-                                <div class="mini_title">
-                                    <h1>Connector -J</h1>
-                                </div>
-                            </div>
-
-                            <div class="inner_mini">
-
-                            </div>
+                      </div>
+                    </div>
+                    <div class="grid-item graphic ui-ux wow zoomIn">
+                      <div class="img-place" data-src="../assets/img/work/work-4.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Drugs Delivery App</h5> <p>Health, Drugs</p>">
+                        <img src="../assets/img/work/work-4.jpg" alt="">
+                        <div class="img-caption">
+                          <h5 class="fg-theme">Drugs Delivery App</h5>
+                          <p>Health, Drugs</p>
                         </div>
-                    </li> -->
+                      </div>
+                    </div>
+                    <div class="grid-item apps ios wow zoomIn">
+                      <div class="img-place" data-src="../assets/img/work/work-5.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Musics Discover</h5> <p>Musics, Dashboard</p>">
+                        <img src="../assets/img/work/work-5.jpg" alt="">
+                        <div class="img-caption">
+                          <h5 class="fg-theme">Musics Discover</h5>
+                          <p>Musics, Dashboard</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item graphic ui-ux wireframes wow zoomIn">
+                      <div class="img-place" data-src="../assets/img/work/work-6.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Game Streaming</h5> <p>Games, Streaming</p>">
+                        <img src="../assets/img/work/work-6.jpg" alt="">
+                        <div class="img-caption">
+                          <h5 class="fg-theme">Game Streaming</h5>
+                          <p>Games, Streaming</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>  
 
-                </ul>
-                <div style="padding: 25px 0 10px 0">
-                    <h3><a href="/projects">View More</a></h3>
-                </div>
-            </div>
+                  <!-- End gridder -->
+                  <div class="text-center">
+                    <a href="javascript:void(0)" class="btn-load-more btn-theme">Load More</a>
+                  </div>
+            </div> 
         </div>
     </section>
 
@@ -527,9 +604,13 @@
 
     <div class="contact_me-conatiner" id="contact_me">
         <div class="inner">
-            <div class="title">
-                <h1 class="heading-sec__main">Get In Touch</h1>
+            <div class="position-relative d-flex align-items-center justify-content-center ">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact <span class="m-hide">Me</span></h1>
+                <h1 class="position-absolute text-uppercase text-primary title-h">Contact Me</h1>
             </div>
+            <!-- <div class="title">
+                <h1 class="heading-sec__main">Get In Touch</h1>
+            </div> -->
 
             <div class="sub-heading">
                 <h4 class="f-souce">I’m excited to learn about your project. Ready to get started</h4>
@@ -599,6 +680,8 @@
         </div>
     </footer>
 
+    <a href="#"  class="back-to-top d-flex align-items-center showScroll justify-content-center "><i class="fa-solid fa-arrow-up"></i></a>
+
     <script src="/scripts/anim.js"></script>
     <script src="/scripts/controller.js"></script>
 
@@ -614,8 +697,8 @@
         crossorigin="anonymous"></script>
 
     <!-- For Design  -->
-    <!-- <script src="/public/scripts/anim.js"></script> -->
-    <!-- <script src="/scripts/controller.js"></script> -->
+    <!-- <script src="/public/scripts/anim.js"></script> 
+    <script src="/scripts/controller.js"></script> -->
 
 </body>
 
