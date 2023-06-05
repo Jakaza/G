@@ -298,7 +298,26 @@
 
 
                         <div class="skill-mf">
-                            <span>HTML</span> <span class="pull-right text-muted">85%</span>
+
+                        <% skills.forEach(element=> { %>
+                            <div class="skills_skill <%= element.name %> f-souce">
+                                <p> <i class="<%=element.icon  %>"></i>
+                                    <%= element.name %>
+                                </p>
+                            </div>
+
+                            <span> <%= element.name %> </span> <span class="pull-right text-muted"> <%= element.level %>%</span>
+                            <div class="progress">
+                              <div class="progress-bar a<%=element.level %>" role="progressbar"  aria-valuenow="<%= element.level %>" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        <% }); %>
+
+
+
+
+
+
+                            <!-- <span>HTML</span> <span class="pull-right text-muted">85%</span>
                             <div class="progress">
                               <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
@@ -313,7 +332,7 @@
                             <span>JAVASCRIPT</span> <span class="pull-right text-muted">90%</span>
                             <div class="progress">
                               <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
+                            </div> -->
                           </div>
                         
 
