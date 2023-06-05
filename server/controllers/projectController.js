@@ -3,15 +3,19 @@ const Project = require('../model/ProjectModel');
 
 const createProject = async (req, res) => {
   const data = req.body;
-  const newProject = new Project(data)
-  try {
-    const result = await newProject.save();
-    res.json(result)
-  } catch (error) {
-    res.status(404).json({
-      message: "Failed To Save Data"
-    })
-  }
+
+  res.json(data)
+
+
+  // const newProject = new Project(data)
+  // try {
+  //   const result = await newProject.save();
+  //   res.json(result)
+  // } catch (error) {
+  //   res.status(404).json({
+  //     message: "Failed To Save Data"
+  //   })
+  // }
 }
 
 const deleteProject = async (req, res) => {
