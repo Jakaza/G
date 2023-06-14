@@ -3,12 +3,14 @@ const openBtn = document.querySelector("#open-btn")
 const closeBtn = document.querySelector("#close-btn")
 const sideMenu = document.querySelector("#sidebar")
 const closeLinks = document.querySelectorAll('.close')
+const downloadBtn = document.getElementById('download-btn')
 
 if (window.innerWidth < 750) {
   document.querySelectorAll('.mobile_remove_data-toggle').forEach(element => {
     element.removeAttribute('data-toggle')
   })
 }
+
 
 // readLouderButton.addEventListener('click', () => {
 //   readLouderButton.style.display = 'none';
@@ -24,11 +26,11 @@ if (window.innerWidth < 750) {
 // })
 
 
-  /**
-   * Back to top button
-   */
+/**
+ * Back to top button
+ */
 
-let backtotop = select('.back-to-top')
+let backtotop = document.querySelector('.back-to-top')
 if (backtotop) {
   const toggleBacktotop = () => {
     if (window.scrollY > 100) {
@@ -38,27 +40,33 @@ if (backtotop) {
     }
   }
   window.addEventListener('load', toggleBacktotop)
-  onscroll(document, toggleBacktotop)
 }
 
+downloadBtn.addEventListener('click', () => {
+  const link = document.createElement('a');
+  // Set the href attribute to the path of your CV file
+  link.href = '/assets/G_CHAUKECV.pdf';
+  // Set the download attribute with the desired file name
+  link.download = 'G_CHAUKECV.pdf';
+  // Programmatically trigger a click event on the link to start the download
+  link.click();
+});
 
 
 
-
-openBtn.addEventListener('click', function() {
-
+openBtn.addEventListener('click', function () {
 
   openBtn.classList.toggle('first-spin')
   sideMenu.classList.toggle('show-sidebar')
 
-  setTimeout(function() {
+  setTimeout(function () {
     openBtn.classList.toggle('hide-btn')
     closeBtn.classList.toggle('hide-btn')
     openBtn.classList.toggle('first-spin')
   }, 300)
 })
 
-closeBtn.addEventListener('click', function() {
+closeBtn.addEventListener('click', function () {
   closeSideMenu()
 })
 
@@ -72,7 +80,7 @@ function closeSideMenu() {
   closeBtn.classList.toggle('first-spin')
   sideMenu.classList.toggle('show-sidebar')
 
-  setTimeout(function() {
+  setTimeout(function () {
     closeBtn.classList.toggle('hide-btn')
     openBtn.classList.toggle('hide-btn')
     closeBtn.classList.toggle('first-spin')
@@ -81,7 +89,7 @@ function closeSideMenu() {
 
 
 
-var TxtRotate = function(el, toRotate, period) {
+var TxtRotate = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
   this.loopNum = 0;
@@ -91,7 +99,7 @@ var TxtRotate = function(el, toRotate, period) {
   this.isDeleting = false;
 };
 
-TxtRotate.prototype.tick = function() {
+TxtRotate.prototype.tick = function () {
   var i = this.loopNum % this.toRotate.length;
   var fullTxt = this.toRotate[i];
 
@@ -117,12 +125,12 @@ TxtRotate.prototype.tick = function() {
     delta = 500;
   }
 
-  setTimeout(function() {
+  setTimeout(function () {
     that.tick();
   }, delta);
 };
 
-window.onload = function() {
+window.onload = function () {
   var elements = document.getElementsByClassName('txt-rotate');
   for (var i = 0; i < elements.length; i++) {
     var toRotate = elements[i].getAttribute('data-rotate');

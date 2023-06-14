@@ -10,8 +10,7 @@ const projectSchema = new Schema({
         type: String,
         require: true
     },
-    source: String,
-    icon: {
+    image: {
         type: String,
         default: "/images/logo.png"
     },
@@ -21,9 +20,13 @@ const projectSchema = new Schema({
         require: true
     },
     hidden: Boolean,
-    download: {
+    views: {
         type: Number,
         default: 0
+    },
+    category: {
+        type: String,
+        require: true
     }
 })
 

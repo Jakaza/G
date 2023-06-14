@@ -85,7 +85,8 @@
                     <div class="underline"></div>
                     <!-- <h1>Hello, I'm Themba </h1> -->
                     <h3 class="text-white font-weight-normal mb-3">I'm</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Themba</h1>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">
+                        Themba</h1>
                     <h4>Software Engineer</h4>
                     <p>As a dedicated software engineer, I am passionate about creating high quality software
                         solutions
@@ -94,8 +95,8 @@
                         methodologies, and I am always eager to learn new technologies and tools. I enjoy
                         collaborating
                         with other engineers and working in a team.</p>
-                    <a href="#contact_me" class="btn hero-btn">Download CV</a>
-       
+                    <button id="download-btn" class="btn hero-btn">Download CV</button>
+
 
                     <div class="social-media mt-4">
                         <ul>
@@ -130,7 +131,7 @@
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
                 <h1 class="position-absolute text-uppercase text-primary title-h">About Me</h1>
             </div>
-            
+
 
             <div class="sub-heading">
                 <p>Here you will find more information about me, what I do, and my current skills mostly in terms of
@@ -178,7 +179,7 @@
                     <h3 class="about__content-title">My Skills</h3>
                     <div class="about_skills-box">
 
-                       <% skills.forEach(element=> { %>
+                        <% skills.forEach(element=> { %>
                             <div class="skills_skill <%= element.name %> f-souce">
                                 <p> <i class="<%=element.icon  %>"></i>
                                     <%= element.name %>
@@ -186,7 +187,7 @@
                             </div>
                             <% }); %>
 
-                               <!-- 
+                                <!-- 
 
                                                       <div class="skills_skill api f-souce">
                             <p>
@@ -197,9 +198,9 @@
                         </div> -->
 
 
-                              
 
-                              
+
+
 
 
 
@@ -262,7 +263,7 @@
                             </p>
                         </div> -->
 
-<!-- 
+                                <!-- 
                         <div class="skill-container">
                             <div class="skill-box">
                                 <span class="name">Java</span>
@@ -299,7 +300,7 @@
                         </div> -->
 
 
-                        <!-- <div class="skill-mf">
+                                <!-- <div class="skill-mf">
 
                         <% skills.forEach(element=> { %>
                             <span> <%= element.name %> </span> <span class="pull-right text-muted"> <%= element.level %>%</span>
@@ -313,7 +314,7 @@
 
 
 
-                            <!-- <span>HTML</span> <span class="pull-right text-muted">85%</span>
+                                <!-- <span>HTML</span> <span class="pull-right text-muted">85%</span>
                             <div class="progress">
                               <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
@@ -329,15 +330,15 @@
                             <div class="progress">
                               <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                             </div> -->
-                          </div>
-                        
-
                     </div>
 
-                </section>
+
             </div>
-            <!-- <a href="#mail_form" id="about-btn" class="btn btn--med btn--theme dynamicBgClr">Contact Me</a> -->
-        </div>
+
+    </section>
+    </div>
+    <!-- <a href="#mail_form" id="about-btn" class="btn btn--med btn--theme dynamicBgClr">Contact Me</a> -->
+    </div>
     </section>
 
 
@@ -362,95 +363,43 @@
                         </div><!-- /.rectangle -->
                         <h3>Software Development </h3>
                         <p>
-                            I am highly motivated to work within the field of Software Development, leveraging my expertise in programming languages and passion for creating innovative solutions.</p>
+                            I am highly motivated to work within the field of Software Development, leveraging my
+                            expertise in programming languages and passion for creating innovative solutions.</p>
                     </div><!-- /.feature-about -->
-                </div>                    
+                </div>
                 <div class="col-sm-3 col-xs-6">
                     <div class="feature-about">
                         <div class="medium-rectangle rectangle">
                             <i class="fa-solid fa-mobile-screen-button"></i>
                         </div><!-- /.rectangle -->
                         <h3>Mobile Development</h3>
-                        <p>Passionate about Mobile Development, I excel in Android platforms, utilizing languages like java to create user-centric mobile applications that deliver seamless experiences.</p>
+                        <p>Passionate about Mobile Development, I excel in Android platforms, utilizing languages like
+                            java to create user-centric mobile applications that deliver seamless experiences.</p>
                     </div><!-- /.feature-about -->
-                </div>                    
+                </div>
                 <div class="col-sm-3 col-xs-6">
                     <div class="feature-about">
                         <div class="medium-rectangle rectangle">
                             <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
                         </div><!-- /.rectangle -->
                         <h3>Software Testing</h3>
-                        <p>I am willing to specialize in Software Testing. I am dedicated to identifying defects, validating functionality, and enhancing the overall reliability of software applications.</p>
+                        <p>I am willing to specialize in Software Testing. I am dedicated to identifying defects,
+                            validating functionality, and enhancing the overall reliability of software applications.
+                        </p>
                     </div><!-- /.feature-about -->
-                </div>                    
+                </div>
                 <div class="col-sm-3 col-xs-6">
                     <div class="feature-about">
                         <div class="medium-rectangle rectangle">
                             <i class="fa-solid fa-database"></i>
                         </div><!-- /.rectangle -->
                         <h3>Database Development</h3>
-                        <p>Building upon the skills acquired during my time in academia, I am eager to pursue a specialization in Database Development.Leveraging my expertise in database design and query optimization.</p>
+                        <p>Building upon the skills acquired during my time in academia, I am eager to pursue a
+                            specialization in Database Development.Leveraging my expertise in database design and query
+                            optimization.</p>
                     </div><!-- /.feature-about -->
                 </div>
             </div>
-
-
-            <!-- <div class="service__content">
-                <div class="service_main_container">
-                    <section class="service_sidebar">
-                        <ul>
-                            <li class="service_side-btn active web">Web Dev</li>
-                            <li class="service_side-btn mobile ">Mobile</li>
-                            <li class="service_side-btn mentor">Mentorship</li>
-                            <li class="service_side-btn">Technical writing</li>
-                            <li class="service_side-btn">Freelance</li>
-                        </ul>
-                    </section>
-                    <section class="service_details">
-                        <div class="web infor">
-                            <h4>Web Development</h4>
-                            <small>
-                                <p class="status av">Available</p>
-                            </small>
-                            <p><i class="fa-solid fa-hand-point-right"></i> <b>Website Design:</b> i create visually
-                                appealing and user-friendly websites that align with my clients' brand and business
-                                goals. This include designing the layout, color scheme, typography, and user
-                                interface.
-                            </p>
-                            <p><i class="fa-solid fa-hand-point-right"></i> <b>Website Maintenance:</b> I provide
-                                ongoing website maintenance services to ensure that my clients' websites remain
-                                up-to-date, secure, and functioning smoothly.</p>
-                        </div>
-                        <div class="mobile infor  hide">
-                            <h4>Mobile Development</h4>
-                            <small>
-                                <p class="status not-av">Not Available</p>
-                            </small>
-                            <p><i class="fa-solid fa-hand-point-right"></i><b>Designing and developing mobile
-                                    applications:</b> I use my programming skills and knowledge of various mobile
-                                app
-                                development platforms (such as Android) to create custom mobile applications my
-                                clients.
-                            </p>
-                        </div>
-
-                        <div class="mentor infor hide">
-                            <h4>Mentorship</h4>
-                            <small>
-                                <p class="status  not-av">Not Available</p>
-                            </small>
-                            <p><i class="fa-solid fa-hand-point-right"></i><b>One-on-one mentoring:</b> I provide
-                                one-on-one mentoring to clients, answering their questions and providing guidance
-                                and
-                                feedback as they work through the training materials.</p>
-                            <p><i class="fa-solid fa-hand-point-right"></i><b>Facilitating group learning:</b> I
-                                facilitate group learning sessions, where students work together to solve problems
-                                and
-                                share their experiences.</p>
-                        </div>
-                    </section>
-                </div>
-            </div> -->
 
         </div>
     </section>
@@ -539,78 +488,82 @@
 
             <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
                 <button class="btn btn-theme-outline selected" data-filter="*">All</button>
-                <button class="btn btn-theme-outline" data-filter=".apps">Apps</button>
+                <!-- <button class="btn btn-theme-outline" data-filter=".apps">Apps</button>
                 <button class="btn btn-theme-outline" data-filter=".template">API</button>
                 <button class="btn btn-theme-outline" data-filter=".ios">WEB</button>
-                <button class="btn btn-theme-outline" data-filter=".ui-ux">UI/UX</button>
-              </div>
+                <button class="btn btn-theme-outline" data-filter=".ui-ux">UI/UX</button> -->
+            </div>
 
 
-    
 
-             <div class="mini-project__content">
-             <div class="gridder my-3">
+
+            <div class="mini-project__content">
+                <div class="gridder my-3">
                     <div class="grid-item apps wow zoomIn">
-                      <div class="img-place" data-src="/images/work/work-1.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Mobile Travel App</h5> <p>Travel, Discovery</p>">
-                        <img src="/images/work/work-1.jpg" alt="">
-                        <div class="img-caption">
-                          <h5 class="fg-theme">Mobile Travel App</h5>
-                          <p>Travel, Discovery</p>
+                        <div class="img-place" data-src="/images/work/work-1.jpg" data-fancybox
+                            data-caption="<h5 class='fg-theme'>IP Finder</h5> <p>Networking, IP Address</p>">
+                            <img src="/images/work/ip.jpg" alt="">
+                            <div class="img-caption">
+                                <a href="https://github.com/Jakaza/IP-Finder" target="_blank">
+                                    <h5 class="fg-theme">IP Finder</h5>
+                                    <p>Networking, IP Address</p>
+                                </a>
+                            </div>
                         </div>
-                      </div>
                     </div>
                     <div class="grid-item template wireframes wow zoomIn">
-                      <div class="img-place" data-src="/images/work/work-2.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Music App</h5> <p>Musics</p>">
-                        <img src="/images/work/work-2.jpg" alt="">
-                        <div class="img-caption">
-                          <h5 class="fg-theme">Music App</h5>
-                          <p>Musics</p>
+                        <div class="img-place" data-src="/images/work/wc.png" data-fancybox
+                            data-caption="<h5 class='fg-theme'>Voice Exam Bassed</h5> <p>Education</p>">
+                            <img src="/images/work/wc.png" alt="">
+                            <div class="img-caption">
+                                <a href="https://wc.lovestoblog.com/" target="_blank">
+                                    <h5 class="fg-theme">Voice Exam Bassed</h5>
+                                    <p>Education</p>
+                                </a>
+                            </div>
                         </div>
-                      </div>
                     </div>
                     <div class="grid-item apps ios wow zoomIn">
-                      <div class="img-place" data-src="/images/work/work-3.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Gaming Dashboard</h5> <p>Games, Streaming</p>">
-                        <img src="/images/work/work-3.jpg" alt="">
-                        <div class="img-caption">
-                          <h5 class="fg-theme">Gaming Dashboard</h5>
-                          <p>Games, Streaming</p>
+                        <div class="img-place" data-src="/images/work/pe.jpg" data-fancybox
+                            data-caption="<h5 class='fg-theme'>Password Encryption</h5> <p>Security, Lib</p>">
+                            <img src="/images/work/pe.jpg" alt="">
+                            <div class="img-caption">
+                                <a href="https://github.com/Jakaza/password-encryption" target="_blank">
+                                    <h5 class="fg-theme">Password Encryption</h5>
+                                    <p>Security, Lib</p>
+                                </a>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                    <div class="grid-item graphic ui-ux wow zoomIn">
-                      <div class="img-place" data-src="/images/work/work-4.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Drugs Delivery App</h5> <p>Health, Drugs</p>">
-                        <img src="/images/work/work-4.jpg" alt="">
-                        <div class="img-caption">
-                          <h5 class="fg-theme">Drugs Delivery App</h5>
-                          <p>Health, Drugs</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="grid-item apps ios wow zoomIn">
-                      <div class="img-place" data-src="/images/work/work-5.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Musics Discover</h5> <p>Musics, Dashboard</p>">
-                        <img src="/images/work/work-5.jpg" alt="">
-                        <div class="img-caption">
-                          <h5 class="fg-theme">Musics Discover</h5>
-                          <p>Musics, Dashboard</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="grid-item graphic ui-ux wireframes wow zoomIn">
-                      <div class="img-place" data-src="/images/work/work-6.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Game Streaming</h5> <p>Games, Streaming</p>">
-                        <img src="/images/work/work-6.jpg" alt="">
-                        <div class="img-caption">
-                          <h5 class="fg-theme">Game Streaming</h5>
-                          <p>Games, Streaming</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>  
 
-                  <!-- End gridder -->
-                  <div class="text-center">
-                    <a href="javascript:void(0)" class="btn-load-more btn-theme">Load More</a>
-                  </div>
-            </div> 
+                    <!-- <div class="grid-item apps ios wow zoomIn">
+                        <div class="img-place" data-src="/images/work/work-5.jpg" data-fancybox
+                            data-caption="<h5 class='fg-theme'>Musics Discover</h5> <p>Musics, Dashboard</p>">
+                            <img src="/images/work/work-5.jpg" alt="">
+                            <div class="img-caption">
+                                <h5 class="fg-theme">Musics Discover</h5>
+                                <p>Indevelopment</p>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="grid-item graphic ui-ux wireframes wow zoomIn">
+                        <div class="img-place" data-src="/images/work/work-6.jpg" data-fancybox
+                            data-caption="<h5 class='fg-theme'>Game Streaming</h5> <p>Games, Streaming</p>">
+                            <img src="/images/work/work-6.jpg" alt="">
+                            <div class="img-caption">
+                                <h5 class="fg-theme">Game Streaming</h5>
+                                <p>Games, Streaming</p>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <!-- End gridder -->
+                <div class="text-center">
+                    <a style="background-color: #dee2e6; color: #dee2e6;" href="javascript:void(0)" class="">Load
+                        More</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -620,7 +573,8 @@
     <div class="contact_me-conatiner" id="contact_me">
         <div class="inner">
             <div class="position-relative d-flex align-items-center justify-content-center ">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact <span class="m-hide">Me</span></h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact <span
+                        class="m-hide">Me</span></h1>
                 <h1 class="position-absolute text-uppercase text-primary title-h">Contact Me</h1>
             </div>
             <!-- <div class="title">
@@ -695,7 +649,6 @@
         </div>
     </footer>
 
-    <a href="#"  class="back-to-top d-flex align-items-center showScroll justify-content-center "><i class="fa-solid fa-arrow-up"></i></a>
 
     <script src="/scripts/anim.js"></script>
     <script src="/scripts/controller.js"></script>

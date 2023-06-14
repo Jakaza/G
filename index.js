@@ -1,5 +1,6 @@
 const path = require("path")
 const express = require('express')
+const session = require('express-session');
 const nodemailer = require("nodemailer");
 const connectDB = require('./server/config/dbConnection')
 const bodyParser = require('body-parser')
@@ -15,6 +16,13 @@ app.set("views", path.join(__dirname, 'server', 'views'))
 
 app.set('view engine', 'ejs')
 
+
+// Configure session middleware
+app.use(session({
+  secret: 'jakazapro',
+  resave: false,
+  saveUninitialized: true
+}));
 
 connectDB();
 app.use(countRequest)
