@@ -42,15 +42,15 @@ if (backtotop) {
   window.addEventListener('load', toggleBacktotop)
 }
 
-downloadBtn.addEventListener('click', () => {
-  const link = document.createElement('a');
-  // Set the href attribute to the path of your CV file
-  link.href = '/assets/G_CHAUKECV.pdf';
-  // Set the download attribute with the desired file name
-  link.download = 'G_CHAUKECV.pdf';
-  // Programmatically trigger a click event on the link to start the download
-  link.click();
-});
+// downloadBtn.addEventListener('click', () => {
+//   const link = document.createElement('a');
+//   // Set the href attribute to the path of your CV file
+//   link.href = 'https://www.dropbox.com/scl/fi/qqwu3sh6sr1q8yy1j9h55/G_Chauke-CV.pdf?rlkey=llss6bkyvgwf2ybrvthm1ou6l&dl=0';
+//   // Set the download attribute with the desired file name
+//   link.download = 'G_CHAUKECV.pdf';
+//   // Programmatically trigger a click event on the link to start the download
+//   link.click();
+// });
 
 
 
