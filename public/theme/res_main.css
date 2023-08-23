@@ -20,7 +20,7 @@
         height: 3rem;
     }
     .inner{
-        width: 90%;
+        width: 85%;
     }
 
     /*
@@ -52,15 +52,14 @@
     }
 
     .skills_skill{
-        min-width: 100px;
+        width: 100%;
         padding: 5px 10px;
-        margin: 10px 5px;
+        margin: 5px 5px;
     }
 
-    .skills_skill p i{
-        display: none;
+    .skills_skill p{
+        font-size: 16px;
     }
-
 
     /*
         SKILLS SEC
@@ -122,7 +121,7 @@
 
 @media only screen and (max-width: 750px) {
     .inner{
-        width: 95%;
+        width: 85%;
     }
 
     main {

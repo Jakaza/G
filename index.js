@@ -33,7 +33,6 @@ app.use(require('./server/routes/api/project'))
 app.use(require('./server/routes/api/skill'))
 app.use('/email', require('./server/routes/api/mail'));
 
-
 // app.get('/', (req, res) => {
 //     const data = "Data";
 //     res.render('index', { data })
@@ -42,12 +41,6 @@ app.use('/email', require('./server/routes/api/mail'));
 // app.get('/_index', (req, res) => {
 //     res.render('_index')
 // })
-
-
-
-
-
-
 
 app.use('/*', (req, res) => {
   res.render('404')
