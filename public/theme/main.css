@@ -207,7 +207,7 @@ nav .links li {
 
 nav .links li a {
     text-transform: capitalize;
-    color: var(--bg-black-2);
+    color: var(--bg-blue-5);
     font-weight: bold;
     letter-spacing: var(--spacing);
     -webkit-transition: var(--transition);
@@ -218,7 +218,7 @@ nav .links li a {
 }
 
 ul li a:hover {
-    color: var(--bg-blue-5);
+    color: var(--bg-blue-4);
 }
 
 .nav-bar {

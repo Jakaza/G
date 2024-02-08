@@ -5,3 +5,6 @@ requests.http
 .replit
 replit.nix
 setPath.bat
+/log
+log/*
+log
