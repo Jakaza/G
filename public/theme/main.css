@@ -1832,3 +1832,87 @@ ul, ol, li {
     height: 100%;
     text-align: center;
 }
+
+
+
+
+/*  exprience-con */
+.exprience-exducation__content-details{
+    padding-top: 25px;
+}
+
+.exprience-con{
+    width: 100%;
+    height: 100%;
+}
+
+.experiences{
+
+
+}
+
+.experiences .s_exprience{
+    cursor: pointer;
+    width: 90%;
+    height: 200px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0px 8px 6px -6px rgba(200, 200, 220, 0.58);
+}
+
+.experiences .s_exprience:hover{
+    box-shadow: 0px 8px -6px 6px rgba(200, 200, 220, 0.58);
+}
+
+.s_exprience{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.s_exprience .period{
+    width: 20%;
+}
+
+.s_exprience .experience-content{
+    width: 75%;
+}
+
+.experience-content .decription{
+    font-size: 14px;
+    padding: 10px 0 5px 0;
+}
+
+.s_exprience p{
+    font-family: 'Lato', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.tools{
+    display: flex;
+    padding: 5px 0 0 0;
+}
+
+.tools li {
+    font-size: 12px;
+    background-color: var(--lightest-slate);
+    padding: 2px 20px;
+    width: fit-content;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.expre-navigation-btn{
+    border-radius: 5px;
+    border: none;
+    padding: 3px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--c-white-1);
+    transition: color 0.3s ease-in-out;
+    background-color: var(--lightest-slate);
+}
+.expre-navigation-btn:hover{
+    color: var(--bg-black-3);
+}
