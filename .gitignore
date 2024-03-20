@@ -8,3 +8,4 @@ setPath.bat
 /log
 log/*
 log
+server/middleware/log/request.log
