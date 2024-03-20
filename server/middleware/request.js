@@ -2,7 +2,7 @@
 const winston = require('winston')
 const uuid = require('uuid')
 const path = require('path')
-const Log = require('../model/LogModel')
+const Log = require('../model/profile')
 
 
 // setup winston
