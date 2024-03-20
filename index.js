@@ -4,10 +4,11 @@ const session = require('express-session');
 const nodemailer = require("nodemailer");
 const connectDB = require('./server/config/dbConnection')
 const bodyParser = require('body-parser')
+const router = require('./server/routes')
 const { countRequest } = require('./server/middleware/request')
 const app = express()
 require("dotenv").config()
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5500;
 const mongoose = require('mongoose')
 app.use(bodyParser.json())
 app.use(express.urlencoded({ extended: false }))
@@ -27,10 +28,12 @@ app.use(session({
 connectDB();
 app.use(countRequest)
 
+app.use(router)
+
 // routes
-app.use(require('./server/routes/page'));
-app.use(require('./server/routes/api/project'))
-app.use(require('./server/routes/api/skill'))
+// app.use(require('./server/routes/page'));
+// app.use(require('./server/routes/api/project'))
+// app.use(require('./server/routes/api/skill'))
 app.use('/email', require('./server/routes/api/mail'));
 
 app.use('/*', (req, res) => {
